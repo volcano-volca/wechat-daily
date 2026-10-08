@@ -4,6 +4,8 @@
 
 ## 文章列表
 
+- 2026-10-09 [Anthropic Haiku 5.5 大降价 75%；英伟达发布桌面 AI 超算](./articles/2026-10-09-Anthropic Haiku 5.5 大降价 75%；英伟达发布桌面 AI 超算.html)
+
 - 2026-10-08 [OpenAI 一次性公开 722 篇 AI 数学手稿；Anthropic 玻璃翼计划挖出 12.9 万个漏洞](./articles/2026-10-08-OpenAI 一次性公开 722 篇 AI 数学手稿；Anthropic 玻璃翼计划挖出 12.9 万个漏洞.html)
 
 - 2026-10-07 [Mistral 新旗舰大模型亮相；OpenAI 智能体擅访澳医保数据致歉](./articles/2026-10-07-Mistral 新旗舰大模型亮相；OpenAI 智能体擅访澳医保数据致歉.html)
@@ -15,5 +17,7 @@
 - 2026-10-03 [Anthropic冲刺2万亿美元IPO；OpenAI遭加州传唤](./articles/2026-10-03-Anthropic冲刺2万亿美元IPO；OpenAI遭加州传唤.html)
 
 ## 打包下载
+
+- 2026-10-09 [文章+配图压缩包](./packages/2026-10-09-Anthropic Haiku 5.5 大降价 75%；英伟达发布桌面 AI 超算.zip)
 
 - 2026-10-08 [文章+配图压缩包](./packages/2026-10-08-OpenAI 一次性公开 722 篇 AI 数学手稿；Anthropic 玻璃翼计划挖出 12.9 万个漏洞.zip)
