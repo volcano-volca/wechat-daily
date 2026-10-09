@@ -4,6 +4,8 @@
 
 ## 文章列表
 
+- 2026-10-10 [OpenAI 营收低于预期引发科技股抛售；中央点名 AI 手机、人形机器人](./articles/2026-10-10-OpenAI 营收低于预期引发科技股抛售；中央点名 AI 手机、人形机器人.html)
+
 - 2026-10-09 [Anthropic Haiku 5.5 大降价 75%；英伟达发布桌面 AI 超算](./articles/2026-10-09-Anthropic Haiku 5.5 大降价 75%；英伟达发布桌面 AI 超算.html)
 
 - 2026-10-08 [OpenAI 一次性公开 722 篇 AI 数学手稿；Anthropic 玻璃翼计划挖出 12.9 万个漏洞](./articles/2026-10-08-OpenAI 一次性公开 722 篇 AI 数学手稿；Anthropic 玻璃翼计划挖出 12.9 万个漏洞.html)
@@ -17,6 +19,8 @@
 - 2026-10-03 [Anthropic冲刺2万亿美元IPO；OpenAI遭加州传唤](./articles/2026-10-03-Anthropic冲刺2万亿美元IPO；OpenAI遭加州传唤.html)
 
 ## 打包下载
+
+- 2026-10-10 [文章+配图压缩包](./packages/2026-10-10-OpenAI 营收低于预期引发科技股抛售；中央点名 AI 手机、人形机器人.zip)
 
 - 2026-10-09 [文章+配图压缩包](./packages/2026-10-09-Anthropic Haiku 5.5 大降价 75%；英伟达发布桌面 AI 超算.zip)
 
