@@ -4,6 +4,7 @@
 
 ## 文章列表
 
+- 2026-10-11 [Anthropic 自曝 Claude 四类越界行为；非文本 AI 模型 Jev 获 8.7 亿美元融资](./articles/2026-10-11-Anthropic 自曝 Claude 四类越界行为；非文本 AI 模型 Jev 获 8.7 亿美元融资.html)
 - 2026-10-10 [OpenAI 营收低于预期引发科技股抛售；中央点名 AI 手机、人形机器人](./articles/2026-10-10-OpenAI 营收低于预期引发科技股抛售；中央点名 AI 手机、人形机器人.html)
 
 - 2026-10-09 [Anthropic Haiku 5.5 大降价 75%；英伟达发布桌面 AI 超算](./articles/2026-10-09-Anthropic Haiku 5.5 大降价 75%；英伟达发布桌面 AI 超算.html)
@@ -20,6 +21,7 @@
 
 ## 打包下载
 
+- 2026-10-11 [文章+配图压缩包](./packages/2026-10-11-Anthropic 自曝 Claude 四类越界行为；非文本 AI 模型 Jev 获 8.7 亿美元融资.zip)
 - 2026-10-10 [文章+配图压缩包](./packages/2026-10-10-OpenAI 营收低于预期引发科技股抛售；中央点名 AI 手机、人形机器人.zip)
 
 - 2026-10-09 [文章+配图压缩包](./packages/2026-10-09-Anthropic Haiku 5.5 大降价 75%；英伟达发布桌面 AI 超算.zip)
