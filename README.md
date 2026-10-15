@@ -3,6 +3,7 @@
 微信公众号每日热点图文的 HTML 存档。
 
 ## 文章列表
+- 2026-10-16 [Netflix 裁员 6% 创 2022 年来最大规模；特斯拉 Roadster 9 年延迟终亮相](./articles/2026-10-16-Netflix 裁员 6% 创 2022 年来最大规模；特斯拉 Roadster 9 年延迟终亮相.html)
 - 2026-10-15 [OpenAI 工程师涉“窃听门”被捕；热通胀数据引爆 AI 股暴跌](./articles/2026-10-15-OpenAI 工程师涉“窃听门”被捕；热通胀数据引爆 AI 股暴跌.html)
 
 - 2026-10-14 [Character.AI 破产卖资产给迪士尼；IMF 警告 AI 股回调恐波及实体经济](./articles/2026-10-14-Character.AI 破产卖资产给迪士尼；IMF 警告 AI 股回调恐波及实体经济.html)
@@ -25,6 +26,7 @@
 - 2026-10-03 [Anthropic冲刺2万亿美元IPO；OpenAI遭加州传唤](./articles/2026-10-03-Anthropic冲刺2万亿美元IPO；OpenAI遭加州传唤.html)
 
 ## 打包下载
+- 2026-10-16 [文章+配图压缩包](./packages/2026-10-16-Netflix 裁员 6% 创 2022 年来最大规模；特斯拉 Roadster 9 年延迟终亮相.zip)
 - 2026-10-15 [文章+配图压缩包](./packages/2026-10-15-OpenAI 工程师涉“窃听门”被捕；热通胀数据引爆 AI 股暴跌.zip)
 
 - 2026-10-14 [文章+配图压缩包](./packages/2026-10-14-Character.AI 破产卖资产给迪士尼；IMF 警告 AI 股回调恐波及实体经济.zip)
