@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>DeepSeek V4.1-Flash-1017 发布，智能体基准超 Claude Opus 5；微软撤出英国 Nscale 数据中心大单</title>
+</head>
+<body>
+<section style="max-width:100%;margin:0 auto;padding:0;font-family:-apple-system,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#333;background:#ffffff;">
+
+  <!-- 顶部横幅 -->
+  <section style="background:linear-gradient(135deg,#0f2a52 0%,#1f6fb2 60%,#0f2a52 100%);padding:36px 24px;text-align:center;">
+    <p style="margin:0 0 10px 0;font-size:13px;letter-spacing:6px;color:#bfe0ff;">热点速览</p>
+    <p style="margin:0;font-size:22px;font-weight:700;color:#ffffff;line-height:1.5;">DeepSeek V4.1-Flash-1017 发布，智能体基准超 Claude Opus 5；微软撤出英国 Nscale 数据中心大单</p>
+    <p style="margin:12px 0 0 0;font-size:13px;color:#9cc4e8;">2026 年 10 月 18 日</p>
+  </section>
+
+  <!-- 导语 -->
+  <section style="padding:22px 20px 6px 20px;">
+    <p style="margin:0;font-size:15px;line-height:1.9;color:#555;">
+      过去 24 小时，AI 产业的两端同时被改写：模型一端，<strong style="color:#1a1a1a;">DeepSeek 发布 V4.1-Flash-1017 新检查点，在 4 项智能体类基准上超过 Claude Opus 5，跑一个编码任务不到 0.2 美元</strong>；算力一端，<strong style="color:#1a1a1a;">微软因"接不上电"退出了英国最大主权 AI 数据中心的租约</strong>，电网已经成了 AI 基建最硬的瓶颈。下面拆开讲透。
+    </p>
+  </section>
+
+  <!-- 分隔线 -->
+  <section style="padding:14px 20px 0 20px;">
+    <p style="margin:0;border-top:1px solid #eee;"></p>
+  </section>
+
+  <!-- 热点一 -->
+  <section style="padding:20px;">
+    <p style="margin:0 0 6px 0;">
+      <span style="display:inline-block;background:#1f6fb2;color:#ffffff;font-size:13px;font-weight:700;padding:3px 12px;border-radius:20px;">大事件 01</span>
+    </p>
+    <p style="margin:8px 0 14px 0;font-size:20px;font-weight:700;line-height:1.5;color:#111;">
+      DeepSeek V4.1-Flash-1017 上线：四项智能体基准超 Claude Opus 5，任务成本不到 0.2 美元
+    </p>
+    <p style="margin:0 0 16px 0;text-align:center;">
+      <img src="IMG_DEEPSEEK" style="width:100%;border-radius:8px;" alt="DeepSeek" />
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      10 月 18 日凌晨（北京时间），DeepSeek 在 Hugging Face 等渠道放出 <strong>V4.1-Flash-1017</strong> 新检查点，并公布了官方基准成绩单。最亮眼的不是综合分数，而是<strong>智能体（Agent）类任务</strong>上的表现：在 DeepSWE v1.1（77.0 vs 74.0）、Automation-Bench（60.5 vs 50.3）、Agents' Last Exam（35.4 vs 28.6）和 Apex Bench（72.1 vs 65.8）四项基准上，<strong style="color:#1f6fb2;">全部超过了 Anthropic 的 Claude Opus 5</strong>——这些都是多步骤、带工具调用的编程智能体任务，正是当下各家拼得最凶的赛道。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      公平地说，这份成绩单是<strong> DeepSeek 自家跑的</strong>，而且不是全面碾压：在纯知识推理的 HLE（42.6 vs 56.3）、Terminal-Bench 4.0（42.3 vs 51.8）等几项上，Opus 5 仍然明显领先。独立第三方的复测结果尚未公布。不过据媒体报道，1017 版本在 11 项编码基准中的 10 项上超过了较弱的 Claude Sonnet 5.6，且同等智能水平下输出的 token 量少约 20%——"快、便宜、够用"正是它赢得用户的核心。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      真正的杀手锏是<strong>成本</strong>：据 The Decoder 对官方成本图的解读，V4.1-Flash-1017 在 DeepSWE 上跑一个任务平均<strong>不到 0.2 美元</strong>（低推理档约 0.1 美元），上一代 Flash 约 0.5 美元，而同场竞技的封闭模型普遍在每任务 2 美元到 10 美元以上。开源权重竞争正在从"拼分数"变成"拼单价"。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      本次更新还<strong>新增了 Search API</strong>，并专门针对 DeepSeek Harness、腾讯 CodeBuddy 和 WorkBuddy 等编程智能体工具做了调优，官方建议升级到 DeepSeek Harness v0.2.1-rc.1 以上版本以获得完整效果。1M token 上下文、图像输入、工具调用、开放权重等特性保持不变。
+    </p>
+    <!-- 数据速览 -->
+    <section style="background:#eef4fb;border:1px solid #b9d2ec;border-radius:10px;padding:16px 18px;margin:16px 0;">
+      <p style="margin:0 0 10px 0;font-size:14px;font-weight:700;color:#1f6fb2;">📊 要点速览</p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 10 月 18 日发布，开放权重 + 新增 Search API</p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 4 项智能体类基准超 <strong>Claude Opus 5</strong>（DeepSWE 77.0、Automation-Bench 60.5 等）</p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· DeepSWE 单任务成本 <strong>&lt; $0.2</strong>，封闭竞品普遍 $2–$10+</p>
+      <p style="margin:0;font-size:14px;line-height:1.8;color:#555;">· 针对 DeepSeek Harness、腾讯 CodeBuddy 等编程工具调优；以上均为官方数据，独立复测待公布</p>
+    </section>
+    <p style="margin:0;font-size:12px;color:#999;line-height:1.8;">消息来源：DeepSeek 官方模型卡、MarkTechPost、ai0.news（2026-10-17/18）</p>
+  </section>
+
+  <!-- 分隔线 -->
+  <section style="padding:0 20px;">
+    <p style="margin:0;border-top:1px dashed #ddd;"></p>
+  </section>
+
+  <!-- 热点二 -->
+  <section style="padding:20px;">
+    <p style="margin:0 0 6px 0;">
+      <span style="display:inline-block;background:#c0392b;color:#ffffff;font-size:13px;font-weight:700;padding:3px 12px;border-radius:20px;">大事件 02</span>
+    </p>
+    <p style="margin:8px 0 14px 0;font-size:20px;font-weight:700;line-height:1.5;color:#111;">
+      微软撤出英国 Nscale 数据中心大单：电网说"2030 年代才有电"
+    </p>
+    <p style="margin:0 0 16px 0;text-align:center;">
+      <img src="IMG_NSCALE" style="width:100%;border-radius:8px;" alt="AI 数据中心" />
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      《星期日电讯报》10 月 18 日率先报道：<strong>微软已经终止了作为 Nscale 英国埃塞克斯郡 Loughton 数据中心主力租户的协议</strong>。该项目是 Nscale 在英国的首个站点，被英国政府称为该国最大的"主权"AI 数据中心，原计划明年上线、为微软的 Azure 在英服务提供算力。据报道，该租约涉及约 2.3 万块 Nvidia AI 芯片的租赁。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      撤出的理由很直白：<strong style="color:#c0392b;">没电</strong>。英国电力网络公司（UK Power Networks）通知 Nscale，该站点的<strong>电网接入要到 2030 年代初才能保障</strong>。高电价与超长电网接排期，正在成为英国建设 AI 基建的最大障碍。讽刺的是，这份协议去年 9 月才在特朗普国事访英期间高调宣布，是微软在英 220 亿英镑投资承诺的一部分。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      时间点对 Nscale 非常不利：这家 Nvidia 参股的 AI 云服务商上月刚刚提交美国 IPO 申请，<strong>目标估值高达 350 亿美元</strong>，招股书披露其签约总收入已超过 1030 亿美元，微软与 Anthropic 是其两大客户（路透社）。不过 Nscale 发言人回应称，与微软的关系"依然牢固且长期"，正为 Loughton 项目探索替代电力方案，且电网问题不影响双方其他合同；微软则拒绝置评。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      这一事件的信号很清晰：<strong>AI 算力的瓶颈正从"买不到卡"转向"接不上电"</strong>。芯片可以加单扩产，电网却要按十年为单位规划——当微软这样的巨头都愿意为"等电"砍掉大单，全球 AI 基建的竞争逻辑正在发生变化。
+    </p>
+    <!-- 数据速览 -->
+    <section style="background:#fdeeee;border:1px solid #f3b8b8;border-radius:10px;padding:16px 18px;margin:16px 0;">
+      <p style="margin:0 0 10px 0;font-size:14px;font-weight:700;color:#a02020;">🚨 要点速览</p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 微软终止 Nscale 英国 Loughton 数据中心<strong>主力租户协议</strong>（据报道涉约 2.3 万块 Nvidia 芯片）</p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 直接原因：英国电网公司称站点供电<strong>最早 2030 年代初</strong>才能保障</p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 项目曾在 2025 年特朗普访英期间高调宣布，被英政府称"最大主权 AI 数据中心"</p>
+      <p style="margin:0;font-size:14px;line-height:1.8;color:#555;">· Nscale 正筹备赴美 IPO（目标估值 $350 亿），称正探索替代电力方案</p>
+    </section>
+    <p style="margin:0;font-size:12px;color:#999;line-height:1.8;">消息来源：《星期日电讯报》、《泰晤士报》、路透社（2026-10-18）</p>
+  </section>
+
+  <!-- 一句话快讯 -->
+  <section style="padding:0 20px 20px 20px;">
+    <section style="background:#f6f8fb;border-radius:10px;padding:16px 18px;">
+      <p style="margin:0 0 10px 0;font-size:14px;font-weight:700;color:#333;">⚡ 一句话快讯</p>
+      <p style="margin:0 0 8px 0;font-size:14px;line-height:1.8;color:#555;">· OpenCode 通知用户紧急轮换密钥：因退役旧控制台可能暴露存储的 OpenAI、Anthropic、Google 密钥，已有 2 名用户报告约 100 美元异常扣费。</p>
+      <p style="margin:0 0 8px 0;font-size:14px;line-height:1.8;color:#555;">· The Verge 报道：Yelp、Delta、摩根大通、Charles Schwab、Cars.com、Amtrak 等正在封锁 OpenAI、Meta、xAI 等公司的 AI 智能体访问，"代理大战"扩围。</p>
+      <p style="margin:0 0 8px 0;font-size:14px;line-height:1.8;color:#555;">· Black Forest Labs 发布开源图像模型 FLUX 3 Image Klein：5.6B 参数、原生 4K、8GB 显存可跑，API 报价每千张 0.009 美元。</p>
+      <p style="margin:0 0 8px 0;font-size:14px;line-height:1.8;color:#555;">· Replit 在 TechCrunch Disrupt 上宣布默认模型从 Claude 换成 ChatGPT，理由是成本、性能与合作强度——曾是 Anthropic 前五大客户。</p>
+      <p style="margin:0 0 8px 0;font-size:14px;line-height:1.8;color:#555;">· Anthropic 公布内部研究：智能体工作时长达员工约 6 倍后，技术岗初级招聘占比从 27% 降至 9%，人均提交量约为半年前 5 倍。</p>
+      <p style="margin:0;font-size:14px;line-height:1.8;color:#555;">· Meta 撤回商业条款中被律师质疑的爬虫条款，坚称只适用于广告与商业产品——TechCrunch 指出这与其正在进行的版权诉讼立场尴尬相撞。</p>
+    </section>
+  </section>
+
+  <!-- 结尾 -->
+  <section style="background:#0f2a52;padding:22px 20px;text-align:center;">
+    <p style="margin:0 0 8px 0;font-size:14px;font-weight:700;color:#ffffff;">💡 一句话总结</p>
+    <p style="margin:0 0 14px 0;font-size:14px;line-height:1.9;color:#9cc4e8;">
+      模型越便宜越快，算力越缺电越贵。<br/>AI 产业的两端，正在同时被重写。
+    </p>
+    <p style="margin:0;font-size:12px;line-height:1.8;color:#6e8fae;">本文为公开资讯整理，仅供参考。</p>
+  </section>
+
+</section>
+
+</body>
+</html>
