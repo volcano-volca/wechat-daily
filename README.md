@@ -3,6 +3,7 @@
 微信公众号每日热点图文的 HTML 存档。
 
 ## 文章列表
+- 2026-10-21 [DeepSeek 开源自研推理框架 DeepInfer；ASI 完成 3.25 亿美元融资](./articles/2026-10-21-DeepSeek 开源自研推理框架 DeepInfer；ASI 完成 3.25 亿美元融资.html)
 - 2026-10-20 [Anthropic 承诺 5% 股权投入公益基金；Character.AI 破产细节曝光：Disney 买人花的钱是技术的 9 倍](./articles/2026-10-20-Anthropic 承诺 5% 股权投入公益基金；Character.AI 破产细节曝光：Disney 买人花的钱是技术的 9 倍.html)
 - 2026-10-19 [DeepSeek V4.1-Flash-1017 发布，智能体基准超 Claude Opus 5；微软撤出英国 Nscale 数据中心大单](./articles/2026-10-19-DeepSeek V4.1-Flash-1017 发布，智能体基准超 Claude Opus 5；微软撤出英国 Nscale 数据中心大单.html)
 - 2026-10-18 [国常会定调"人工智能+"行动；印尼股市"黑天鹅"暴跌11.6%](./articles/2026-10-18-国常会定调"人工智能+"行动；印尼股市"黑天鹅"暴跌11.6%.html)
@@ -30,6 +31,7 @@
 - 2026-10-03 [Anthropic冲刺2万亿美元IPO；OpenAI遭加州传唤](./articles/2026-10-03-Anthropic冲刺2万亿美元IPO；OpenAI遭加州传唤.html)
 
 ## 打包下载
+- 2026-10-21 [文章+配图压缩包](./packages/2026-10-21-DeepSeek 开源自研推理框架 DeepInfer；ASI 完成 3.25 亿美元融资.zip)
 - 2026-10-20 [文章+配图压缩包](./packages/2026-10-20-Anthropic 承诺 5% 股权投入公益基金；Character.AI 破产细节曝光：Disney 买人花的钱是技术的 9 倍.zip)
 - 2026-10-19 [文章+配图压缩包](./packages/2026-10-19-DeepSeek V4.1-Flash-1017 发布，智能体基准超 Claude Opus 5；微软撤出英国 Nscale 数据中心大单.zip)
 - 2026-10-18 [文章+配图压缩包](./packages/2026-10-18-国常会定调"人工智能+"行动；印尼股市"黑天鹅"暴跌11.6%.zip)
