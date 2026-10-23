@@ -3,6 +3,7 @@
 微信公众号每日热点图文的 HTML 存档。
 
 ## 文章列表
+- 2026-10-24 [DeepSeek 约 1000 亿元融资遭美禁令两天后爆出；A 股人形机器人概念股爆发](./articles/2026-10-24-DeepSeek 约 1000 亿元融资遭美禁令两天后爆出；A 股人形机器人概念股爆发.html)
 - 2026-10-23 [王兴兴：具身智能 ChatGPT 时刻最快明年到来；PHP 爆出 9.2 分高危漏洞](./articles/2026-10-23-王兴兴：具身智能 ChatGPT 时刻最快明年到来；PHP 爆出 9.2 分高危漏洞.html)
 - 2026-10-22 [Anthropic 发布主动式智能体应用 Claude Duet；美国下令联邦机构移除 DeepSeek](./articles/2026-10-22-Anthropic 发布主动式智能体应用 Claude Duet；美国下令联邦机构移除 DeepSeek.html)
 - 2026-10-21 [DeepSeek 开源自研推理框架 DeepInfer；ASI 完成 3.25 亿美元融资](./articles/2026-10-21-DeepSeek 开源自研推理框架 DeepInfer；ASI 完成 3.25 亿美元融资.html)
@@ -33,6 +34,7 @@
 - 2026-10-03 [Anthropic冲刺2万亿美元IPO；OpenAI遭加州传唤](./articles/2026-10-03-Anthropic冲刺2万亿美元IPO；OpenAI遭加州传唤.html)
 
 ## 打包下载
+- 2026-10-24 [文章+配图压缩包](./packages/2026-10-24-DeepSeek 约 1000 亿元融资遭美禁令两天后爆出；A 股人形机器人概念股爆发.zip)
 - 2026-10-23 [文章+配图压缩包](./packages/2026-10-23-王兴兴：具身智能 ChatGPT 时刻最快明年到来；PHP 爆出 9.2 分高危漏洞.zip)
 - 2026-10-22 [文章+配图压缩包](./packages/2026-10-22-Anthropic 发布主动式智能体应用 Claude Duet；美国下令联邦机构移除 DeepSeek.zip)
 - 2026-10-21 [文章+配图压缩包](./packages/2026-10-21-DeepSeek 开源自研推理框架 DeepInfer；ASI 完成 3.25 亿美元融资.zip)
