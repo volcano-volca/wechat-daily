@@ -3,6 +3,7 @@
 微信公众号每日热点图文的 HTML 存档。
 
 ## 文章列表
+- 2026-10-29 [谷歌 Genie 4 让 AI 世界能听会动；纽约州给未成年人聊天机器人立规矩](./articles/2026-10-29-谷歌 Genie 4 让 AI 世界能听会动；纽约州给未成年人聊天机器人立规矩.html)
 - 2026-10-28 [OpenAI 推出 GPT-6.1 Terra：会用电脑的 AI 降价一半；微软向约 6 万人提供自愿离职](./articles/2026-10-28-OpenAI 推出 GPT-6.1 Terra：会用电脑的 AI 降价一半；微软向约 6 万人提供自愿离职.html)
 - 2026-10-27 [Anthropic 正式递交 IPO 招股书；物理 AI 板块爆发，宇树市值重回 2700 亿](./articles/2026-10-27-Anthropic 正式递交 IPO 招股书；物理 AI 板块爆发，宇树市值重回 2700 亿.html)
 - 2026-10-26 [AWS 算力卖到2027年；月之暗面 Kimi K3.1 Pro 追平 Claude](./articles/2026-10-26-AWS 算力卖到2027年；月之暗面 Kimi K3.1 Pro 追平 Claude.html)
@@ -38,6 +39,7 @@
 - 2026-10-03 [Anthropic冲刺2万亿美元IPO；OpenAI遭加州传唤](./articles/2026-10-03-Anthropic冲刺2万亿美元IPO；OpenAI遭加州传唤.html)
 
 ## 打包下载
+- 2026-10-29 [文章+配图压缩包](./packages/2026-10-29-谷歌 Genie 4 让 AI 世界能听会动；纽约州给未成年人聊天机器人立规矩.zip)
 - 2026-10-28 [文章+配图压缩包](./packages/2026-10-28-OpenAI 推出 GPT-6.1 Terra：会用电脑的 AI 降价一半；微软向约 6 万人提供自愿离职.zip)
 - 2026-10-27 [文章+配图压缩包](./packages/2026-10-27-Anthropic 正式递交 IPO 招股书；物理 AI 板块爆发，宇树市值重回 2700 亿.zip)
 - 2026-10-26 [文章+配图压缩包](./packages/2026-10-26-AWS 算力卖到2027年；月之暗面 Kimi K3.1 Pro 追平 Claude.zip)
