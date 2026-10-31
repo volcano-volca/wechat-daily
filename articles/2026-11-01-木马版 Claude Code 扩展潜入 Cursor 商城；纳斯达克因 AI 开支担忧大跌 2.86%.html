@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>木马版 Claude Code 扩展潜入 Cursor 商城；纳斯达克因 AI 开支担忧大跌 2.86%</title>
+</head>
+<body>
+<section style="max-width:100%;margin:0 auto;padding:0;font-family:-apple-system,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#333;background:#ffffff;">
+
+  <!-- 顶部横幅 -->
+  <section style="background:linear-gradient(135deg,#1a0b2e 0%,#5b2d8e 60%,#1a0b2e 100%);padding:36px 24px;text-align:center;">
+    <p style="margin:0 0 10px 0;font-size:13px;letter-spacing:6px;color:#d0a9ff;">AI 前沿速览</p>
+    <p style="margin:0;font-size:22px;font-weight:700;color:#ffffff;line-height:1.5;">木马扩展潜入开发者工具链，美股为 AI 开支重新算账</p>
+    <p style="margin:12px 0 0 0;font-size:13px;color:#b9a3d6;">2026 年 10 月 31 日</p>
+  </section>
+
+  <!-- 导语 -->
+  <section style="padding:22px 20px 6px 20px;">
+    <p style="margin:0;font-size:15px;line-height:1.9;color:#555;">
+      10 月最后一天，AI 圈的两条线同时承压：<strong style="color:#1a1a1a;">一条是信任线——被篡改的 Claude Code 扩展混进 Cursor 商城，给开发者电脑留了 SSH 后门</strong>；<strong style="color:#1a1a1a;">另一条是耐心线——亚马逊与英特尔的财报让华尔街重新掂量 AI 基建的回报时间表，纳斯达克单日跌去 2.86%</strong>。下面拆开讲透。
+    </p>
+  </section>
+
+  <!-- 分隔线 -->
+  <section style="padding:14px 20px 0 20px;">
+    <p style="margin:0;border-top:1px solid #eee;"></p>
+  </section>
+
+  <!-- 热点一 -->
+  <section style="padding:20px;">
+    <p style="margin:0 0 6px 0;">
+      <span style="display:inline-block;background:#c0392b;color:#ffffff;font-size:13px;font-weight:700;padding:3px 12px;border-radius:20px;">大事件 01</span>
+    </p>
+    <p style="margin:8px 0 14px 0;font-size:20px;font-weight:700;line-height:1.5;color:#111;">
+      木马版 Claude Code 扩展潜入 Cursor 商城，至多 5000 名开发者中招
+    </p>
+    <p style="margin:0 0 16px 0;text-align:center;">
+      <img src="01-claude-cursor.jpg" style="width:100%;border-radius:8px;" alt="Claude Code" />
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      据 Cursor 安全公告与 StepSecurity 的分析，10 月 29 日，被篡改的 Claude Code 扩展 <strong>2.1.312 / 2.1.313</strong> 在 Cursor 扩展商城上架约 <strong>11 小时</strong>（世界时 09:27–20:35，即北京时间 17:27 至次日 04:35）。Cursor 称，<strong>至多 5000 名用户</strong>收到了这个版本。值得注意的是，它顶着官方扩展的合法标识上架，不是常见的仿冒拼写，单凭名字很难分辨。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      这个木马的动作很直接：扩展一加载，内嵌的加载器就会收集主机信息，往 <strong>~/.ssh/authorized_keys</strong> 里植入一个标签为 <strong>svc-telemetry</strong> 的攻击者 SSH 密钥，安装持久化机制（macOS 的 LaunchAgent、Windows 的计划任务），并打开一条反向 SSH 隧道。也就是说，<strong>只卸载扩展是清不干净的</strong>，持久化部分会继续留守，必须按 Cursor 发布的清理脚本处理，并轮换这台机器上能接触到的凭证。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      也要把责任边界说清楚：Anthropic 澄清，这不是自家系统或员工电脑被攻破，而是攻击者利用 Cursor 商城渠道发布的篡改副本，官方渠道的版本不受影响，2.1.313 也从未上架 Open-VSX 与微软商城。事发后 Cursor 下线了整个商城、审计了其他扩展、轮换了密钥并重建服务后才恢复，干净版本 2.1.314 已发布，攻击者服务器也已下线。一次 11 小时的窗口，暴露的是整个开发者工具链的供应链风险：你每天自动更新的扩展，本身就值得一份信任清单。
+    </p>
+    <!-- 数据速览 -->
+    <section style="background:#fdeeee;border:1px solid #f3b8b8;border-radius:10px;padding:16px 18px;margin:16px 0;">
+      <p style="margin:0 0 10px 0;font-size:14px;font-weight:700;color:#a02020;">🚨 要点速览</p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 篡改版本 <strong>2.1.312 / 2.1.313</strong>，在 Cursor 商城存活约 <strong>11 小时</strong>（10 月 29 日）</p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· Cursor 称至多 <strong>5000 名用户</strong>收到；攻击者 SSH 密钥标签为 <strong>svc-telemetry</strong></p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 自查：查 authorized_keys、跑 Cursor 官方清理脚本、轮换凭证；只卸载扩展不够</p>
+      <p style="margin:0;font-size:14px;line-height:1.8;color:#555;">· Anthropic 澄清自身系统未被攻破；干净版 <strong>2.1.314</strong> 已发布</p>
+    </section>
+    <p style="margin:0;font-size:12px;color:#999;line-height:1.8;">消息来源：Cursor 安全公告、StepSecurity 分析、微软威胁情报分析（2026-10-29/30）</p>
+  </section>
+
+  <!-- 分隔线 -->
+  <section style="padding:0 20px;">
+    <p style="margin:0;border-top:1px dashed #ddd;"></p>
+  </section>
+
+  <!-- 热点二 -->
+  <section style="padding:20px;">
+    <p style="margin:0 0 6px 0;">
+      <span style="display:inline-block;background:#5b2d8e;color:#ffffff;font-size:13px;font-weight:700;padding:3px 12px;border-radius:20px;">大事件 02</span>
+    </p>
+    <p style="margin:8px 0 14px 0;font-size:20px;font-weight:700;line-height:1.5;color:#111;">
+      纳斯达克大跌 2.86%，AI 开支账单让市场重新算账
+    </p>
+    <p style="margin:0 0 16px 0;text-align:center;">
+      <img src="02-nasdaq-selloff.jpg" style="width:100%;border-radius:8px;" alt="纳斯达克" />
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      10 月 30 日美股收盘，<strong>纳斯达克综合指数跌 747.73 点（-2.86%）至 25,437.00 点</strong>，创 6 月 5 日以来最大单日百分比跌幅；标普 500 跌 1.82% 至 7,580.07 点，道指跌 1.09% 至 51,770.31 点。至此，纳指已较 10 月 6 日的收盘纪录高位回落 7.8%，10 月月线也收跌。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      导火索是盘后公布的两份财报。亚马逊三季度营收 <strong>2019.4 亿美元（同比 +12%）</strong>，低于市场预期的 2023.1 亿美元，每股收益 1.89 美元也不及预期的 1.96 美元；云业务 AWS 增长 39% 至 460 亿美元是亮点，但公司过去 12 个月自由现金流为 <strong>-424 亿美元</strong>，同时维持 2026 年约 <strong>2200 亿美元</strong>的资本开支预期。另一边，英特尔预警今年将出现现金消耗，股价暴跌约 <strong>28.6%</strong>，创逾 40 年最大单日跌幅；英伟达、AMD 等半导体股也普遍跟跌。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      市场质疑的其实不是 AI 有没有需求，而是回报的时间表：当基建开支越来越依赖举债，投资者开始要求更快的回款证据。AI 交易没有证伪，但"先花钱、后算账"的阶段正在过去，下一阶段的财报会被放在更严苛的标尺下衡量。
+    </p>
+    <!-- 数据速览 -->
+    <section style="background:#f4edfb;border:1px solid #cdb4ef;border-radius:10px;padding:16px 18px;margin:16px 0;">
+      <p style="margin:0 0 10px 0;font-size:14px;font-weight:700;color:#5b2d8e;">📊 要点速览</p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 纳指 <strong>-2.86%</strong> 至 25,437.00 点，标普 <strong>-1.82%</strong>，道指 <strong>-1.09%</strong>（10 月 30 日收盘）</p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 亚马逊 Q3 营收 $2019.4 亿、EPS $1.89，均低于预期；AWS +39% 至 $460 亿</p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 亚马逊过去 12 个月自由现金流 <strong>-$424 亿</strong>，2026 年资本开支预期约 <strong>$2200 亿</strong></p>
+      <p style="margin:0;font-size:14px;line-height:1.8;color:#555;">· 英特尔暴跌约 <strong>28.6%</strong>，创逾 40 年最大单日跌幅</p>
+    </section>
+    <p style="margin:0;font-size:12px;color:#999;line-height:1.8;">消息来源：路透社、美联社、The Statesman、Seoul Economic Daily（2026-10-30/31）</p>
+  </section>
+
+  <!-- 一句话快讯 -->
+  <section style="padding:0 20px 20px 20px;">
+    <section style="background:#f6f8fb;border-radius:10px;padding:16px 18px;">
+      <p style="margin:0 0 10px 0;font-size:14px;font-weight:700;color:#333;">⚡ 一句话快讯</p>
+      <p style="margin:0 0 8px 0;font-size:14px;line-height:1.8;color:#555;">· 苹果与阿里巴巴 10 月 31 日官宣：<strong>千问集成至 Apple 智能</strong>，11 月 4 日随 iOS 开发者 Beta 版开放测试，12 月随 iOS 27.3 正式版向中国用户推出，覆盖 Siri、写作工具与视觉智能。</p>
+      <p style="margin:0 0 8px 0;font-size:14px;line-height:1.8;color:#555;">· 西湖世界模型研究中心 10 月 31 日在西湖大学云谷校区成立，聚焦世界模型与物理智能。</p>
+      <p style="margin:0;font-size:14px;line-height:1.8;color:#555;">· Mistral 10 月 29 日发布万亿参数 Large 4 模型的改进权重：多模态、三档推理模式，可在自有基础设施上运行。</p>
+    </section>
+  </section>
+
+  <!-- 结尾 -->
+  <section style="background:#1a0b2e;padding:22px 20px;text-align:center;">
+    <p style="margin:0 0 8px 0;font-size:14px;font-weight:700;color:#ffffff;">💡 一句话总结</p>
+    <p style="margin:0 0 14px 0;font-size:14px;line-height:1.9;color:#b9a3d6;">
+      工具链的信任要一寸寸验，资本的耐心要一季季挣。<br/>AI 越深入日常，这两本账就越得算清楚。
+    </p>
+    <p style="margin:0;font-size:12px;line-height:1.8;color:#7a6396;">本文为公开资讯整理，仅供参考。</p>
+  </section>
+
+</section>
+
+</body>
+</html>
