@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>DeepSeek 公开 Super-agent 架构；苹果智能接入通义千问</title>
+</head>
+<body>
+<section style="max-width:100%;margin:0 auto;padding:0;font-family:-apple-system,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#333;background:#ffffff;">
+
+  <!-- 顶部横幅 -->
+  <section style="background:linear-gradient(135deg,#0b2a4a 0%,#1a6fb5 60%,#0b2a4a 100%);padding:36px 24px;text-align:center;">
+    <p style="margin:0 0 10px 0;font-size:13px;letter-spacing:6px;color:#bfe3ff;">AI 前沿速览</p>
+    <p style="margin:0;font-size:22px;font-weight:700;color:#ffffff;line-height:1.5;">DeepSeek 公开 Super-agent 架构；苹果智能接入通义千问</p>
+    <p style="margin:12px 0 0 0;font-size:13px;color:#9cc6e8;">2026 年 11 月 1 日热点 · 11 月 2 日整理</p>
+  </section>
+
+  <!-- 导语 -->
+  <section style="padding:22px 20px 6px 20px;">
+    <p style="margin:0;font-size:15px;line-height:1.9;color:#555;">
+      11 月 1 日的 AI 圈，两条消息都指向"让 AI 更自主、更贴近日常"：<strong style="color:#1a1a1a;">DeepSeek 公开了 Super-agent 架构</strong>，想让 AI 自己调度多任务、主动干活；<strong style="color:#1a1a1a;">苹果则宣布把通义千问接进中国版 Apple Intelligence</strong>，国行 iPhone 的 AI 终于有了明确落地时间表。下面拆开讲透。
+    </p>
+  </section>
+
+  <section style="padding:14px 20px 0 20px;">
+    <p style="margin:0;border-top:1px solid #eee;"></p>
+  </section>
+
+  <!-- 热点一 -->
+  <section style="padding:20px;">
+    <p style="margin:0 0 6px 0;">
+      <span style="display:inline-block;background:#1a6fb5;color:#ffffff;font-size:13px;font-weight:700;padding:3px 12px;border-radius:20px;">大事件 01</span>
+    </p>
+    <p style="margin:8px 0 14px 0;font-size:20px;font-weight:700;line-height:1.5;color:#111;">
+      DeepSeek 公开 Super-agent 架构：让 AI 自己调度、主动干活
+    </p>
+    <p style="margin:0 0 16px 0;text-align:center;">
+      <img src="IMG_DEEPSEEK" style="width:100%;border-radius:8px;" alt="DeepSeek" />
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      10 月 31 日晚，DeepSeek Harness 团队发表技术文章《Super-agent 设计探索：迈向更自主的 Agent 系统》，并同步开源了研究原型。它的出发点很直白：模型能做的事越来越多，但一个人通常只能同时跟进 <strong>3 至 5 个活跃会话</strong>——瓶颈从模型能力，转到了人的注意力。Super-agent 想把会话管理和上下文同步从人手上移到系统层面，人只负责定目标和验收结果。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      架构核心是 <strong>Router 与 Worker 双层设计</strong>：Router 是持续运行的全局协调节点，统一接收群聊、GitHub、邮件等多渠道消息并分派任务；Worker 各自拥有独立上下文，并行执行问题复现、代码审查、功能开发等具体工作，必要时还能调用 Subagent。系统还引入事件驱动与两级过滤机制：群聊里没人 @ 它，它也能识别潜在缺陷，主动在后台复现并尝试修复。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      团队给 Super-agent 归纳了四个特征：<strong>连续、高效、主动、持久</strong>——跨渠道感觉是同一个 Agent、并行多任务、主动推进值得做的事、长期在线且能从异常中恢复。初步实验模拟了约 300 条消息、约 20 条工作请求的协作环境，结果显示 Super-agent 任务完成时间中位数 <strong>12.4 分钟</strong>、95 分位 <strong>15.7 分钟</strong>，而传统单会话方案在中性提示下 95 分位达 29.5 分钟。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      但要泼一盆冷水：团队自己坦言，这次没有提出全新理论，只是把任务调度、事件驱动、存算分离等经典计算机系统思想用到 Agent 架构上；实验测的是调度能力，未评估真实编码质量；公开原型仅供研究参考，并非 DeepSeek 正式产品。看热闹可以，别把它当成能直接上线的产品。
+    </p>
+    <section style="background:#eef6fc;border:1px solid #bcd9ef;border-radius:10px;padding:16px 18px;margin:16px 0;">
+      <p style="margin:0 0 10px 0;font-size:14px;font-weight:700;color:#1a6fb5;">📊 要点速览</p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 10 月 31 日晚发布，<strong>Router + Worker 双层架构</strong>，研究原型已开源</p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 四个特征：<strong>连续、高效、主动、持久</strong></p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 模拟实验：完成时间中位数 <strong>12.4 分钟</strong>、95 分位 <strong>15.7 分钟</strong></p>
+      <p style="margin:0;font-size:14px;line-height:1.8;color:#555;">· 官方提醒：仅为架构思路探讨，<strong>不是正式产品</strong>，未评估真实编码质量</p>
+    </section>
+    <p style="margin:0;font-size:12px;color:#999;line-height:1.8;">消息来源：DeepSeek Harness 团队官方文章、虎嗅、潮新闻、环球网（2026-10-31/11-01）</p>
+  </section>
+
+  <section style="padding:0 20px;">
+    <p style="margin:0;border-top:1px dashed #ddd;"></p>
+  </section>
+
+  <!-- 热点二 -->
+  <section style="padding:20px;">
+    <p style="margin:0 0 6px 0;">
+      <span style="display:inline-block;background:#c0392b;color:#ffffff;font-size:13px;font-weight:700;padding:3px 12px;border-radius:20px;">大事件 02</span>
+    </p>
+    <p style="margin:8px 0 14px 0;font-size:20px;font-weight:700;line-height:1.5;color:#111;">
+      苹果智能接入通义千问：11 月 4 日开测，12 月随 iOS 27.3 推出
+    </p>
+    <p style="margin:0 0 16px 0;text-align:center;">
+      <img src="IMG_APPLE" style="width:100%;border-radius:8px;" alt="Apple iPhone" />
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      10 月 31 日，苹果与阿里巴巴宣布合作：把通义千问大模型接入面向中国用户的 Apple Intelligence。这是 Apple Intelligence 自 2024 年 6 月发布以来首次在中国落地。首批功能将于 <strong>11 月 4 日起随最新 iOS 开发者 Beta 版开放测试</strong>，并计划于 <strong>12 月随 iOS 27.3 正式版</strong>向中国用户推出。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      用起来是什么样？中国用户可以在 <strong>Siri、写作工具和视觉智能</strong>中直接调用千问，覆盖文本与图像理解、内容生成：Siri 可调用千问的广博知识答疑，也可把文档、照片发给千问深度提问；写作工具新增"千问创作"，可从零起草内容。基础功能如实时翻译、照片消除等主要由苹果自研模型在设备端处理，千问作为扩展接入复杂请求。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      隐私与边界同样值得注意：千问集成采用<strong>用户自主选择（Opt-in）</strong>模式，阿里巴巴表示用户请求与生成回复不会用于模型训练；首批仅限 iPhone（iPad 与 Mac 暂不在列），且不包括 WWDC 2026 上发布的新一代 Siri AI 等高级功能——中国用户这次拿到的是 2024 年 WWDC 发布的基础功能组合。
+    </p>
+    <section style="background:#fdeeee;border:1px solid #f3b8b8;border-radius:10px;padding:16px 18px;margin:16px 0;">
+      <p style="margin:0 0 10px 0;font-size:14px;font-weight:700;color:#a02020;">📊 要点速览</p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 10 月 31 日宣布，苹果 × 阿里巴巴，<strong>通义千问接入中国版 Apple Intelligence</strong></p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· <strong>11 月 4 日</strong>开发者 Beta 开测，<strong>12 月 iOS 27.3</strong> 正式推送</p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 覆盖 Siri、写作工具、视觉智能；<strong>自主选择开启</strong>，请求不用于训练</p>
+      <p style="margin:0;font-size:14px;line-height:1.8;color:#555;">· 首批仅限 iPhone；新一代 Siri AI 等高级功能暂不提供</p>
+    </section>
+    <p style="margin:0;font-size:12px;color:#999;line-height:1.8;">消息来源：苹果中国官网、新华社、腾讯新闻、中华网（2026-10-31/11-01）</p>
+  </section>
+
+  <!-- 一句话快讯 -->
+  <section style="padding:0 20px 20px 20px;">
+    <section style="background:#f6f8fb;border-radius:10px;padding:16px 18px;">
+      <p style="margin:0 0 10px 0;font-size:14px;font-weight:700;color:#333;">⚡ 一句话快讯</p>
+      <p style="margin:0 0 8px 0;font-size:14px;line-height:1.8;color:#555;">· 据报道，Meta 与中国企业傅利叶合作打造人形机器人原型 Max，身高约 1.5 米、体重约 48.1 千克，搭载英伟达 Thor 芯片，Max 2 原型已于今年 9 月启动研发。</p>
+      <p style="margin:0;font-size:14px;line-height:1.8;color:#555;">· 据报道，SpaceXAI 将于 11 月 7 日起为 Grok 模型生成的文本添加隐形水印，以响应欧盟《人工智能法案》要求。</p>
+    </section>
+  </section>
+
+  <!-- 结尾 -->
+  <section style="background:#0b2a4a;padding:22px 20px;text-align:center;">
+    <p style="margin:0 0 8px 0;font-size:14px;font-weight:700;color:#ffffff;">💡 一句话总结</p>
+    <p style="margin:0 0 14px 0;font-size:14px;line-height:1.9;color:#9cc6e8;">
+      一个让 AI 更会自己干活，一个让 AI 更快走进每个人的手机。<br/>自主与落地，是同一枚硬币的两面。
+    </p>
+    <p style="margin:0;font-size:12px;line-height:1.8;color:#6d93b5;">本文为公开资讯整理，仅供参考。</p>
+  </section>
+
+</section>
+
+</body>
+</html>
