@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>美团发布1.6万亿参数LongCat-2.5；优必选推出机器人仿真平台Thinker-Sim</title>
+</head>
+<body>
+<section style="max-width:100%;margin:0 auto;padding:0;font-family:-apple-system,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#333;background:#ffffff;">
+
+  <!-- 顶部横幅 -->
+  <section style="background:linear-gradient(135deg,#0b2a4a 0%,#1a6fb5 60%,#0b2a4a 100%);padding:36px 24px;text-align:center;">
+    <p style="margin:0 0 10px 0;font-size:13px;letter-spacing:6px;color:#bfe3ff;">AI 前沿速览</p>
+    <p style="margin:0;font-size:22px;font-weight:700;color:#ffffff;line-height:1.5;">美团发布1.6万亿参数LongCat-2.5；优必选推出机器人仿真平台Thinker-Sim</p>
+    <p style="margin:12px 0 0 0;font-size:13px;color:#9cc6e8;">2026 年 11 月 2 日热点 · 11 月 3 日整理</p>
+  </section>
+
+  <!-- 导语 -->
+  <section style="padding:22px 20px 6px 20px;">
+    <p style="margin:0;font-size:15px;line-height:1.9;color:#555;">
+      11 月 2 日的 AI 圈，两条消息一软一硬、恰好互补：<strong style="color:#1a1a1a;">美团拿出了 1.6 万亿参数的 LongCat-2.5</strong>，要在国产算力上把长程智能体任务做到第一梯队；<strong style="color:#1a1a1a;">优必选则发布了具身智能仿真平台 Thinker-Sim</strong>，让机器人先在电脑里把活练熟、再上真机。下面拆开讲透。
+    </p>
+  </section>
+
+  <section style="padding:14px 20px 0 20px;">
+    <p style="margin:0;border-top:1px solid #eee;"></p>
+  </section>
+
+  <!-- 热点一 -->
+  <section style="padding:20px;">
+    <p style="margin:0 0 6px 0;">
+      <span style="display:inline-block;background:#1a6fb5;color:#ffffff;font-size:13px;font-weight:700;padding:3px 12px;border-radius:20px;">大事件 01</span>
+    </p>
+    <p style="margin:8px 0 14px 0;font-size:20px;font-weight:700;line-height:1.5;color:#111;">
+      美团发布 LongCat-2.5：1.6 万亿参数，全程国产算力训练
+    </p>
+    <p style="margin:0 0 16px 0;text-align:center;">
+      <img src="01-meituan-longcat.jpg" style="width:100%;border-radius:8px;" alt="美团" />
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      11 月 2 日，美团 LongCat 团队发布面向<strong>长程智能体任务的原生多模态模型 LongCat-2.5</strong>。它总参数达 <strong>1.6 万亿</strong>，每次推理只激活其中约 <strong>480 亿</strong>参数——典型的稀疏 MoE 结构，个头大、跑起来相对省。今年 6 月发布的 LongCat-2.0 已是首个在国产算力上完成万亿参数模型全流程训练与推理的模型，这次美团称 2.5 是目前国产算力上完成的最大规模训练任务，“国芯国模”又往前走了一步。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      能力上有两个强化方向。一是<strong>原生多模态</strong>：把不同分辨率的图像编码为多层级离散 Token，与文本 Token 一起交给同一主干模型处理，支持视觉编程、交互网页、3D 展示页面等任务；二是<strong>长程智能体</strong>：中训练阶段用最长 <strong>100 万 Token</strong> 的序列做长上下文训练，累计训练量达数万亿 Token，并引入更多长程轨迹数据与大规模长程强化学习，目标是让模型能端到端啃下复杂代码库开发、完整项目构建这类多步骤工程活。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      跑分方面先说清口径：以下均为美团公布的自测结果，未经第三方独立复核。美团称 LongCat-2.5 在多项主流基准上综合成绩介于 <strong>Claude Opus 4.8 与 Opus 5 之间</strong>，在 AutomationBench、LongCatClawBench 等自动化与通用 Agent 基准上领先 Opus 5；在终端操作基准 Terminal Bench v4.0 上得 <strong>38.5 分</strong>，超过 GPT-5.6-Sol，但仍落后于 Opus 5。落地上，普通用户可在 longcat.ai 官网体验，开发者可调用同步上线的 API；美团还推出了面向本地生活商家的 AI 经营工作台“妙手”，官方给的案例是：模型自主构建渠道利润表，识别出支付 GMV 增长 23.2% 而渠道利润下降 1.7% 的增长质量问题，并给出资源配置建议。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      值得单独说一句的是国产算力这道坎：面对国产加速器单卡不足 80GB 的显存限制，团队通过超节点重排并行度、混合词表并行、MoonEP 动态专家复制等手段优化，美团技术博客称优化后单卡训练吞吐量较 DDP 基线提升 <strong>86%</strong>。模型权重后续据报道还将陆续登陆 GitHub 与 Hugging Face。跑分可以先存疑，但“万亿参数模型能在国产算力上训出来、跑起来”这件事本身，就是这次发布最硬的信号。
+    </p>
+    <section style="background:#eef6fc;border:1px solid #bcd9ef;border-radius:10px;padding:16px 18px;margin:16px 0;">
+      <p style="margin:0 0 10px 0;font-size:14px;font-weight:700;color:#1a6fb5;">📊 要点速览</p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 11 月 2 日发布，面向长程智能体任务的<strong>原生多模态模型</strong></p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 总参数 <strong>1.6 万亿</strong>，单次激活约 <strong>480 亿</strong>；长上下文达 <strong>100 万 Token</strong></p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 全程国产算力训练；美团称基准成绩介于 <strong>Opus 4.8 与 Opus 5 之间</strong></p>
+      <p style="margin:0;font-size:14px;line-height:1.8;color:#555;">· 官网 longcat.ai 可体验、API 同步上线；配套商家 AI 工作台“妙手”</p>
+    </section>
+    <p style="margin:0;font-size:12px;color:#999;line-height:1.8;">消息来源：美团 LongCat 团队、新浪科技、凤凰网、环球网（2026-11-02）</p>
+  </section>
+
+  <section style="padding:0 20px;">
+    <p style="margin:0;border-top:1px dashed #ddd;"></p>
+  </section>
+
+  <!-- 热点二 -->
+  <section style="padding:20px;">
+    <p style="margin:0 0 6px 0;">
+      <span style="display:inline-block;background:#c0392b;color:#ffffff;font-size:13px;font-weight:700;padding:3px 12px;border-radius:20px;">大事件 02</span>
+    </p>
+    <p style="margin:8px 0 14px 0;font-size:20px;font-weight:700;line-height:1.5;color:#111;">
+      优必选发布 Thinker-Sim：给机器人开一间“先在电脑里练”的练功房
+    </p>
+    <p style="margin:0 0 16px 0;text-align:center;">
+      <img src="02-ubtech-thinker-sim.jpg" style="width:100%;border-radius:8px;" alt="人形机器人" />
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      11 月 2 日上午，优必选发布以 <strong>Real2Sim2Real</strong> 为核心的具身智能仿真平台 <strong>Thinker-Sim</strong>，要补的正是机器人落地最磨人的环节：真实数据采集贵、仿真环境搭建难、算法验证周期长。平台把三件事打包成一站式体系——<strong>真实场景数字化、规模化仿真数据合成、机器人能力评测</strong>，口号是“让真实世界快速进入仿真，验证机器人能力”。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      技术上分三层：场景重建与资产生成，靠自研 Thinker-GS 高保真场景重建算法与 SimReady 资产自动化生成技术，把真实工厂产线、商业展厅等场景从采集、三维重建一路转成仿真资产，还支持图文驱动的三维资产批量生成；仿真数据合成，靠自研高性能渲染引擎与大规模并行仿真架构，官方称渲染效率提升 <strong>67.3%</strong>，单节点（8GPU）日均可合成 <strong>390 小时</strong>仿真数据，通信效率提升超 400%；机器人能力评测，搭建面向感知、导航、操作等任务的统一仿真评测体系，通过场景、光照、纹理、材质等多维度随机化复现真实环境的不确定性。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      用起来门槛也刻意放低了：内置标准化仿真任务模板，一键启动、实时推流画面；可视化工作流零代码编排任务，官方称适配 <strong>90% 以上</strong>的目标仿真场景；基于自研 Ulab-Agent，用自然语言就能完成场景创建、环境配置、任务编排与调度执行。说句冷静的话：仿真平台本身并不新鲜，英伟达的 Isaac 平台已经做了很多年，Thinker-Sim 更实际的看点在“评测”——机器人到底能不能干活，行业一直缺一把公认的尺子。平台发布只是第一步，同行肯不肯用、测出来的分数认不认，才是下一阶段的考题。
+    </p>
+    <section style="background:#fdeeee;border:1px solid #f3b8b8;border-radius:10px;padding:16px 18px;margin:16px 0;">
+      <p style="margin:0 0 10px 0;font-size:14px;font-weight:700;color:#a02020;">📊 要点速览</p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 11 月 2 日发布，核心框架 <strong>Real2Sim2Real</strong>，一站式仿真技术底座</p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 三大能力：<strong>场景数字化、仿真数据合成、能力评测</strong></p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 渲染效率提升 <strong>67.3%</strong>；单节点 8GPU 日均合成 <strong>390 小时</strong>仿真数据</p>
+      <p style="margin:0;font-size:14px;line-height:1.8;color:#555;">· 自然语言交互（Ulab-Agent），官方称适配 <strong>90% 以上</strong>目标仿真场景</p>
+    </section>
+    <p style="margin:0;font-size:12px;color:#999;line-height:1.8;">消息来源：优必选官方、新浪科技、IT之家、新京报贝壳财经（2026-11-02）</p>
+  </section>
+
+  <!-- 一句话快讯 -->
+  <section style="padding:0 20px 20px 20px;">
+    <section style="background:#f6f8fb;border-radius:10px;padding:16px 18px;">
+      <p style="margin:0 0 10px 0;font-size:14px;font-weight:700;color:#333;">⚡ 一句话快讯</p>
+      <p style="margin:0 0 8px 0;font-size:14px;line-height:1.8;color:#555;">· 据报道，贾跃亭旗下 FFR 机器人 10 月销售及出货 351 台、创单月纪录，累计 1168 台首次过千，他预计 11 月、12 月月均超过 400 台。</p>
+      <p style="margin:0;font-size:14px;line-height:1.8;color:#555;">· 据报道，OpenAI 将于 12 月起合并 ChatGPT 与编程工具 Codex 的使用额度，Plus、Pro、Business 套餐共享额度，按 Token 消耗量而非消息条数扣减。</p>
+    </section>
+  </section>
+
+  <!-- 结尾 -->
+  <section style="background:#0b2a4a;padding:22px 20px;text-align:center;">
+    <p style="margin:0 0 8px 0;font-size:14px;font-weight:700;color:#ffffff;">💡 一句话总结</p>
+    <p style="margin:0 0 14px 0;font-size:14px;line-height:1.9;color:#9cc6e8;">
+      一个把大模型做得更大、更能干长活，一个把机器人的练功房搬进电脑。<br/>底座与落地，正在同一天往前走。
+    </p>
+    <p style="margin:0;font-size:12px;line-height:1.8;color:#6d93b5;">本文为公开资讯整理，仅供参考。</p>
+  </section>
+
+</section>
+
+</body>
+</html>

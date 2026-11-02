@@ -3,6 +3,7 @@
 微信公众号每日热点图文的 HTML 存档。
 
 ## 文章列表
+- 2026-11-03 [美团发布1.6万亿参数LongCat-2.5；优必选推出机器人仿真平台Thinker-Sim](./articles/2026-11-03-美团发布1.6万亿参数LongCat-2.5；优必选推出机器人仿真平台Thinker-Sim.html)
 - 2026-11-02 [DeepSeek 公开 Super-agent 架构；苹果智能接入通义千问](./articles/2026-11-02-DeepSeek 公开 Super-agent 架构；苹果智能接入通义千问.html)
 - 2026-11-01 [木马版 Claude Code 扩展潜入 Cursor 商城；纳斯达克因 AI 开支担忧大跌 2.86%](./articles/2026-11-01-木马版 Claude Code 扩展潜入 Cursor 商城；纳斯达克因 AI 开支担忧大跌 2.86%.html)
 - 2026-10-31 [腾讯 WorkBuddy 任务请求破90亿；加拿大16亿加元入股 Cohere](./articles/2026-10-31-腾讯 WorkBuddy 任务请求破90亿；加拿大16亿加元入股 Cohere.html)
@@ -43,6 +44,7 @@
 - 2026-10-03 [Anthropic冲刺2万亿美元IPO；OpenAI遭加州传唤](./articles/2026-10-03-Anthropic冲刺2万亿美元IPO；OpenAI遭加州传唤.html)
 
 ## 打包下载
+- 2026-11-03 [文章+配图压缩包](./packages/2026-11-03-美团发布1.6万亿参数LongCat-2.5；优必选推出机器人仿真平台Thinker-Sim.zip)
 - 2026-11-02 [文章+配图压缩包](./packages/2026-11-02-DeepSeek 公开 Super-agent 架构；苹果智能接入通义千问.zip)
 - 2026-11-01 [文章+配图压缩包](./packages/2026-11-01-木马版 Claude Code 扩展潜入 Cursor 商城；纳斯达克因 AI 开支担忧大跌 2.86%.zip)
 - 2026-10-31 [文章+配图压缩包](./packages/2026-10-31-腾讯 WorkBuddy 任务请求破90亿；加拿大16亿加元入股 Cohere.zip)
