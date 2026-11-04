@@ -3,6 +3,7 @@
 微信公众号每日热点图文的 HTML 存档。
 
 ## 文章列表
+- 2026-11-05 [AMD三季度营收133.8亿美元；Canva重组波及1271人](./articles/2026-11-05-AMD三季度营收133.8亿美元；Canva重组波及1271人.html)
 - 2026-11-04 [Marvell 1150亿美元收购Lumentum；Anthropic披露8954亿美元算力承诺](./articles/2026-11-04-Marvell 1150亿美元收购Lumentum；Anthropic披露8954亿美元算力承诺.html)
 - 2026-11-03 [美团发布1.6万亿参数LongCat-2.5；优必选推出机器人仿真平台Thinker-Sim](./articles/2026-11-03-美团发布1.6万亿参数LongCat-2.5；优必选推出机器人仿真平台Thinker-Sim.html)
 - 2026-11-02 [DeepSeek 公开 Super-agent 架构；苹果智能接入通义千问](./articles/2026-11-02-DeepSeek 公开 Super-agent 架构；苹果智能接入通义千问.html)
@@ -45,6 +46,7 @@
 - 2026-10-03 [Anthropic冲刺2万亿美元IPO；OpenAI遭加州传唤](./articles/2026-10-03-Anthropic冲刺2万亿美元IPO；OpenAI遭加州传唤.html)
 
 ## 打包下载
+- 2026-11-05 [文章+配图压缩包](./packages/2026-11-05-AMD三季度营收133.8亿美元；Canva重组波及1271人.zip)
 - 2026-11-04 [文章+配图压缩包](./packages/2026-11-04-Marvell 1150亿美元收购Lumentum；Anthropic披露8954亿美元算力承诺.zip)
 - 2026-11-03 [文章+配图压缩包](./packages/2026-11-03-美团发布1.6万亿参数LongCat-2.5；优必选推出机器人仿真平台Thinker-Sim.zip)
 - 2026-11-02 [文章+配图压缩包](./packages/2026-11-02-DeepSeek 公开 Super-agent 架构；苹果智能接入通义千问.zip)
