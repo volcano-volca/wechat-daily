@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>腾讯混元 Hy4 发布；OpenAI 智能体挖出 Linux 内核 948 个提权漏洞</title>
+</head>
+<body>
+<section style="max-width:100%;margin:0 auto;padding:0;font-family:-apple-system,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#333;background:#ffffff;">
+
+  <!-- 顶部横幅 -->
+  <section style="background:linear-gradient(135deg,#1a0b2e 0%,#5b2d8e 60%,#1a0b2e 100%);padding:36px 24px;text-align:center;">
+    <p style="margin:0 0 10px 0;font-size:13px;letter-spacing:6px;color:#d0a9ff;">AI 前沿速览</p>
+    <p style="margin:0;font-size:22px;font-weight:700;color:#ffffff;line-height:1.5;">腾讯混元 Hy4 发布；OpenAI 智能体挖出 Linux 内核 948 个提权漏洞</p>
+    <p style="margin:12px 0 0 0;font-size:13px;color:#b9a3d6;">2026 年 11 月 5 日</p>
+  </section>
+
+  <!-- 导语 -->
+  <section style="padding:22px 20px 6px 20px;">
+    <p style="margin:0;font-size:15px;line-height:1.9;color:#555;">
+      过去 24 小时，AI 圈一头是开源大模型的中国军团集体发力，一头是安全攻防的自动化新纪录：<strong style="color:#1a1a1a;">腾讯混元 Hy4 正式发布，7700 亿参数、首次能看图、能操作电脑</strong>；另一边，<strong style="color:#1a1a1a;">OpenAI 的自主安全管线一次挖出 Linux 内核 948 个提权漏洞</strong>，每个漏洞的发现成本只要约 1279 美元。下面拆开讲透。
+    </p>
+  </section>
+
+  <!-- 分隔线 -->
+  <section style="padding:14px 20px 0 20px;">
+    <p style="margin:0;border-top:1px solid #eee;"></p>
+  </section>
+
+  <!-- 热点一 -->
+  <section style="padding:20px;">
+    <p style="margin:0 0 6px 0;">
+      <span style="display:inline-block;background:#5b2d8e;color:#ffffff;font-size:13px;font-weight:700;padding:3px 12px;border-radius:20px;">大事件 01</span>
+    </p>
+    <p style="margin:8px 0 14px 0;font-size:20px;font-weight:700;line-height:1.5;color:#111;">
+      腾讯混元 Hy4 发布：7700 亿参数，首次能看图、能操作电脑
+    </p>
+    <p style="margin:0 0 16px 0;text-align:center;">
+      <img src="01-腾讯混元Hy4.jpg" style="width:100%;border-radius:8px;" alt="腾讯混元" />
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      11 月 4 日，腾讯混元正式发布新一代大语言模型 Hy4。相比 8 月底的 Hy4 Preview，新模型进一步扩大了预训练和后训练规模，总参数达 <strong>7700 亿（770B）</strong>，采用混合专家（MoE）架构，每次推理仅激活约 <strong>490 亿</strong>参数，上下文窗口一次可处理 <strong>100 万 Token</strong>。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      最大的变化是能力边界：Hy4 是混元系列中<strong>首次引入视觉理解能力</strong>的模型，能读懂图表和文档；同时<strong>首次支持电脑操作（Computer Use）</strong>，可以结合命令行与图形界面执行复杂任务，朝着长程 Agent 的方向迈了一大步。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      开源方面，Hy4 模型权重将于近期以 Apache 2.0 协议开源（正式版权重尚未发布），Hy4 Flash 轻量版也将于近期推出。定价与 Preview 持平：输入 <strong>6 元/百万 Tokens</strong>、输出 18 元，腾讯云 TokenHub 5 折优惠至 12 月 31 日；WorkBuddy/CodeBuddy 在 11 月 4 日至 15 日期间提供一定免费额度。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      值得注意的是，混元团队自己也承认：Hy4 已跻身最强开源模型之列，但与顶尖闭源模型仍然存在较大差距。据第三方评测机构 Vals AI 11 月 4 日公布的结果，Hy4 综合准确率 59.35%，在 33 个模型中排第 13 位、开源权重模型中第 4 位。
+    </p>
+    <!-- 数据速览 -->
+    <section style="background:#f4edfb;border:1px solid #cdb4ef;border-radius:10px;padding:16px 18px;margin:16px 0;">
+      <p style="margin:0 0 10px 0;font-size:14px;font-weight:700;color:#5b2d8e;">📊 要点速览</p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 总参数 <strong>7700 亿</strong>，每次推理激活约 <strong>490 亿</strong>，上下文 <strong>100 万 Token</strong></p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 混元系列首次具备<strong>视觉理解</strong>与<strong>电脑操作（Computer Use）</strong>能力</p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 权重将于近期以 <strong>Apache 2.0</strong> 开源，Hy4 Flash 轻量版随后推出</p>
+      <p style="margin:0;font-size:14px;line-height:1.8;color:#555;">· API 输入 <strong>6 元/百万 Tokens</strong>，TokenHub 5 折至 12 月 31 日</p>
+    </section>
+    <p style="margin:0;font-size:12px;color:#999;line-height:1.8;">消息来源：腾讯新闻、TechNode、AI Times（2026-11-04/05）</p>
+  </section>
+
+  <!-- 分隔线 -->
+  <section style="padding:0 20px;">
+    <p style="margin:0;border-top:1px dashed #ddd;"></p>
+  </section>
+
+  <!-- 热点二 -->
+  <section style="padding:20px;">
+    <p style="margin:0 0 6px 0;">
+      <span style="display:inline-block;background:#c0392b;color:#ffffff;font-size:13px;font-weight:700;padding:3px 12px;border-radius:20px;">大事件 02</span>
+    </p>
+    <p style="margin:8px 0 14px 0;font-size:20px;font-weight:700;line-height:1.5;color:#111;">
+      OpenAI 智能体挖出 Linux 内核 948 个提权漏洞，单个成本约 1279 美元
+    </p>
+    <p style="margin:0 0 16px 0;text-align:center;">
+      <img src="02-OpenAI-Linux漏洞.jpg" style="width:100%;border-radius:8px;" alt="OpenAI" />
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      OpenAI 11 月 4 日发布研究报告《A thousand fewer paths to root》，披露了一条自主安全管线在 10 月中旬针对 Linux 内核的实战结果：管线分发现、动态验证、利用评估、补丁生成、人工审核五个阶段，全程由一个尚未发布的网络安全模型驱动。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      数字相当惊人：管线覆盖了约 <strong>7%</strong> 的内核代码（5034 个审计目标，约 280 万行），从 <strong>2308</strong> 个候选缺陷中复现了 <strong>1724</strong> 个，最终做出 <strong>948</strong> 个互不相同的本地提权漏洞利用，每个都附带候选补丁。整轮实验花了约 <strong>121 万美元</strong> API 费用，折合每个漏洞约 <strong>1279 美元</strong>。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      对比一下：今年 7 月 GPT-5.6 Sol 的同类实验只找到 166 个漏洞，而新管线在内核又经过三个月加固的情况下，数量翻了 5 倍多。OpenAI 按历史悬赏价格估算，这批漏洞的市场价值在 1890 万至 6630 万美元之间，是成本的 16 到 55 倍——不过这只是 OpenAI 自己的换算，不是实际悬赏收入。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      需要说清楚两点：第一，这些是<strong>本地提权</strong>漏洞，攻击者须先拿到一个普通账户才能提权到 root，不是远程直接攻破；第二，948 个只是"已验证利用 + 候选补丁"，不是已修复——截至报告发布，61 个漏洞已在上游修复，43 个补丁在准备中，299 个正在公开讨论，其余仍在走披露流程。OpenAI 表示漏洞利用细节不会公开，补丁也须经人工审核才能提交。
+    </p>
+    <!-- 数据速览 -->
+    <section style="background:#fdeeee;border:1px solid #f3b8b8;border-radius:10px;padding:16px 18px;margin:16px 0;">
+      <p style="margin:0 0 10px 0;font-size:14px;font-weight:700;color:#a02020;">🚨 要点速览</p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 候选缺陷 <strong>2308</strong> 个 → 复现 <strong>1724</strong> 个 → 独特提权漏洞 <strong>948</strong> 个</p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 总成本约 <strong>$121 万</strong>，折合每个漏洞约 <strong>$1279</strong></p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 7 月实验仅发现 166 个，新管线数量翻了 <strong>5 倍多</strong></p>
+      <p style="margin:0;font-size:14px;line-height:1.8;color:#555;">· <strong>61</strong> 个已在上游修复，<strong>43</strong> 个补丁准备中，<strong>299</strong> 个公开讨论中</p>
+    </section>
+    <p style="margin:0;font-size:12px;color:#999;line-height:1.8;">消息来源：OpenAI 研究报告、CSO Online、GBHackers（2026-11-04/05）</p>
+  </section>
+
+  <!-- 一句话快讯 -->
+  <section style="padding:0 20px 20px 20px;">
+    <section style="background:#f6f8fb;border-radius:10px;padding:16px 18px;">
+      <p style="margin:0 0 10px 0;font-size:14px;font-weight:700;color:#333;">⚡ 一句话快讯</p>
+      <p style="margin:0 0 8px 0;font-size:14px;line-height:1.8;color:#555;">· 月之暗面开源 Kimi K3.1 Pro 模型权重：<strong>2.8 万亿参数</strong>、100 万 Token 上下文，支持文本、图像输入与 Agent 任务。</p>
+      <p style="margin:0 0 8px 0;font-size:14px;line-height:1.8;color:#555;">· Meta 收购 AI 编程初创 Conductor，其云服务将于 <strong>11 月 20 日</strong>关闭，之后客户云端数据开始删除。</p>
+      <p style="margin:0 0 8px 0;font-size:14px;line-height:1.8;color:#555;">· OpenAI 宣布收购 Pierre Computer，补强 Codex 底层的代码导航能力，剑指 GitHub。</p>
+      <p style="margin:0 0 8px 0;font-size:14px;line-height:1.8;color:#555;">· Anthropic 与美联社达成首个付费内容授权协议，Claude 获得带出处的选举报道数据。</p>
+      <p style="margin:0;font-size:14px;line-height:1.8;color:#555;">· 苹果被曝削减员工 AI 预算：工程师每日额度从 <strong>300 美元降至 200 美元</strong>，还可能进一步降到 100 美元。</p>
+    </section>
+  </section>
+
+  <!-- 结尾 -->
+  <section style="background:#1a0b2e;padding:22px 20px;text-align:center;">
+    <p style="margin:0 0 8px 0;font-size:14px;font-weight:700;color:#ffffff;">💡 一句话总结</p>
+    <p style="margin:0 0 14px 0;font-size:14px;line-height:1.9;color:#b9a3d6;">
+      开源模型在拼"能干活"，安全攻防在拼"找得快"。<br/>AI 既在当生产力，也在当质检员——两边的账，都越算越便宜了。
+    </p>
+    <p style="margin:0;font-size:12px;line-height:1.8;color:#7a6396;">本文为公开资讯整理，仅供参考。</p>
+  </section>
+
+</section>
+
+</body>
+</html>
