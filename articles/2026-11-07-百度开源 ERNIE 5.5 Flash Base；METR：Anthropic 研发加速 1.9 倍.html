@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>百度开源 ERNIE 5.5 Flash Base；METR：Anthropic 研发加速 1.9 倍</title>
+</head>
+<body>
+<section style="max-width:100%;margin:0 auto;padding:0;font-family:-apple-system,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#333;background:#ffffff;">
+
+  <!-- 顶部横幅 -->
+  <section style="background:linear-gradient(135deg,#1a0b2e 0%,#5b2d8e 60%,#1a0b2e 100%);padding:36px 24px;text-align:center;">
+    <p style="margin:0 0 10px 0;font-size:13px;letter-spacing:6px;color:#d0a9ff;">AI 前沿速览</p>
+    <p style="margin:0;font-size:22px;font-weight:700;color:#ffffff;line-height:1.5;">百度开源 ERNIE 5.5 Flash Base；METR：Anthropic 研发加速 1.9 倍</p>
+    <p style="margin:12px 0 0 0;font-size:13px;color:#b9a3d6;">2026 年 11 月 6 日</p>
+  </section>
+
+  <!-- 导语 -->
+  <section style="padding:22px 20px 6px 20px;">
+    <p style="margin:0;font-size:15px;line-height:1.9;color:#555;">
+      过去 24 小时，AI 圈一头是开源模型的效率竞赛，一头是对"AI 加速 AI"这件事本身的度量：<strong style="color:#1a1a1a;">百度开源 ERNIE 5.5 Flash Base，2800 亿参数、每次只激活 140 亿</strong>；另一边，<strong style="color:#1a1a1a;">独立评估机构 METR 测算 Anthropic 的 AI 研发速度已加快约 1.9 倍</strong>，且大部分加速来自 AI 自身。下面拆开讲透。
+    </p>
+  </section>
+
+  <!-- 分隔线 -->
+  <section style="padding:14px 20px 0 20px;">
+    <p style="margin:0;border-top:1px solid #eee;"></p>
+  </section>
+
+  <!-- 热点一 -->
+  <section style="padding:20px;">
+    <p style="margin:0 0 6px 0;">
+      <span style="display:inline-block;background:#5b2d8e;color:#ffffff;font-size:13px;font-weight:700;padding:3px 12px;border-radius:20px;">大事件 01</span>
+    </p>
+    <p style="margin:8px 0 14px 0;font-size:20px;font-weight:700;line-height:1.5;color:#111;">
+      百度开源 ERNIE 5.5 Flash Base：2800 亿参数，每次只激活 140 亿
+    </p>
+    <p style="margin:0 0 16px 0;text-align:center;">
+      <img src="01-百度ERNIE.jpg" style="width:100%;border-radius:8px;" alt="百度 ERNIE" />
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      11 月 5 日，百度在 Hugging Face 开放了新一代基础模型 <strong>ERNIE 5.5 Flash Base</strong> 的权重。这是一个稀疏混合专家（MoE）模型：总参数 <strong>2800 亿</strong>，每次推理只激活约 <strong>140 亿</strong>，从零预训练用了 <strong>33.5 万亿 Tokens</strong>，训练上下文 12.8 万，微调与推理时可扩展到 <strong>100 万 Token</strong>。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      关键要分清：这次放出的是<strong>预训练终点 checkpoint</strong>，未经中间训练和后训练，不是能直接对话的助手模型——百度说完整版 ERNIE 5.5 Flash 随后就到。放基础版的意思是让企业拿它做自己的领域模型，省掉重复大规模预训练的成本。权重提供 FP8（约 288GB）与 BF16 两种格式，vLLM、SGLang 等开源推理框架已跟进支持。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      性能方面，百度官方称在 30 项基准中 <strong>24 项拿了第一</strong>，对照组是 DeepSeek-V4-Flash-Base、腾讯 Hy3-preview-Base 和小米 MiMo-V2.5-Base；代码上领先幅度最大，HumanEval+ 82.3 对 69.5、LiveCodeBench 40.1 对 31.9。不过要提醒一句：这些都是百度官方数据，暂无第三方独立复核，而且对照的并非各家最新模型。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      最值得留意的是授权条款：ERNIE 4.5 用的是 Apache 2.0，这次改成了百度自定协议——<strong>排除欧盟、英国和韩国地区使用</strong>，相关产品年收入 5000 万美元及以下可免费商用（需署名并向百度报备一次），超过则须事先取得百度书面授权。开源在收紧，拿来用之前先看清许可。
+    </p>
+    <!-- 数据速览 -->
+    <section style="background:#f4edfb;border:1px solid #cdb4ef;border-radius:10px;padding:16px 18px;margin:16px 0;">
+      <p style="margin:0 0 10px 0;font-size:14px;font-weight:700;color:#5b2d8e;">📊 要点速览</p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 总参数 <strong>2800 亿</strong>，每次推理激活约 <strong>140 亿</strong>，预训练 <strong>33.5 万亿 Tokens</strong></p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 上下文训练 <strong>12.8 万</strong>，微调与推理可扩展到 <strong>100 万 Token</strong></p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 仅为<strong>预训练基础版</strong>，无后训练；完整版随后推出</p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 百度官方称 <strong>30 项基准中 24 项第一</strong>（暂无第三方复核）</p>
+      <p style="margin:0;font-size:14px;line-height:1.8;color:#555;">· 自定许可：<strong>排除欧盟、英国、韩国</strong>；年收入超 <strong>5000 万美元</strong>商用须书面授权</p>
+    </section>
+    <p style="margin:0;font-size:12px;color:#999;line-height:1.8;">消息来源：百度、Hugging Face、The Decoder、Superpower Daily（2026-11-05/06）</p>
+  </section>
+
+  <!-- 分隔线 -->
+  <section style="padding:0 20px;">
+    <p style="margin:0;border-top:1px dashed #ddd;"></p>
+  </section>
+
+  <!-- 热点二 -->
+  <section style="padding:20px;">
+    <p style="margin:0 0 6px 0;">
+      <span style="display:inline-block;background:#c0392b;color:#ffffff;font-size:13px;font-weight:700;padding:3px 12px;border-radius:20px;">大事件 02</span>
+    </p>
+    <p style="margin:8px 0 14px 0;font-size:20px;font-weight:700;line-height:1.5;color:#111;">
+      METR 评估：Anthropic 的 AI 研发速度加快约 1.9 倍，八成加速来自 AI 自身
+    </p>
+    <p style="margin:0 0 16px 0;text-align:center;">
+      <img src="02-Anthropic-METR.jpg" style="width:100%;border-radius:8px;" alt="AI 研发加速" />
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      独立评估机构 METR 11 月 5 日发布报告：经过 8 月 12 日至 10 月 29 日、为期 11 周的驻场审查（约 2.5 名全职人员、访谈约 15 名关键员工），测算 Anthropic 的模型能力进步速度自 2025 年 10 月以来加快约 <strong>1.9 倍</strong>（95% 置信区间 1.5–2.8 倍）。按 METR 的主观判断，真实值可能在 1.3 到 3 倍之间。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      这个 1.9 倍是怎么算的：METR 用 Anthropic 版 Epoch 能力指数（AECI，多个基准成绩合成的指数）画趋势线，2025 年 10 月前每年约涨 15 个点，之后约涨 29 个点，两者相除即 1.9 倍——相当于"一年走完了过去两年的路"。注意，它说的是<strong>进步速度</strong>变快，不是模型本身变聪明了 1.9 倍。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      加速是谁带来的？METR 判断，约 <strong>80%</strong> 来自 AI 自身——研究员用 Claude 写代码、分析实验，干活更快了。但这仍是"AI 辅助人"，不是 AI 独立完成整个研发流程；报告同时认为，未来一年内没有明显的瓶颈会必然拖慢这种加速。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      不过这份结论有个大前提：Anthropic 拥有单方面涂黑权，METR 认为最有信息量的大部分证据都被涂掉了，约 100 页的完整报告也没有公开；METR 也没拿到未发布模型的试用权限，原定的一项算力核查中途被取消。所以这是一份"高权限但不可完全核查"的评估——结论值得重视，数字要留有余地。
+    </p>
+    <!-- 数据速览 -->
+    <section style="background:#fdeeee;border:1px solid #f3b8b8;border-radius:10px;padding:16px 18px;margin:16px 0;">
+      <p style="margin:0 0 10px 0;font-size:14px;font-weight:700;color:#a02020;">🚨 要点速览</p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 能力进步速度加快约 <strong>1.9 倍</strong>（95% 置信区间 <strong>1.5–2.8 倍</strong>）</p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 约 <strong>80%</strong> 的加速归因于 AI 自身（为判断值，不确定性大）</p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 仍是 <strong>AI 辅助人</strong>，未证实全自主研发闭环</p>
+      <p style="margin:0;font-size:14px;line-height:1.8;color:#555;">· 最有信息量的证据<strong>大多被涂黑</strong>，完整报告未公开，结论不可完全核查</p>
+    </section>
+    <p style="margin:0;font-size:12px;color:#999;line-height:1.8;">消息来源：METR、The Neuron、MadRobot（2026-11-05/06）</p>
+  </section>
+
+  <!-- 一句话快讯 -->
+  <section style="padding:0 20px 20px 20px;">
+    <section style="background:#f6f8fb;border-radius:10px;padding:16px 18px;">
+      <p style="margin:0 0 10px 0;font-size:14px;font-weight:700;color:#333;">⚡ 一句话快讯</p>
+      <p style="margin:0 0 8px 0;font-size:14px;line-height:1.8;color:#555;">· OpenAI 发布安全专用模型 <strong>GPT-6 Cyber</strong>：ExploitGym 得分 <strong>48.5%</strong>，高于 GPT-5.6 Cyber 的 32.1%；网络安全能力列为"严重（Critical）"级，仅限获批 Daybreak Red 客户使用。</p>
+      <p style="margin:0 0 8px 0;font-size:14px;line-height:1.8;color:#555;">· 谷歌发布 <strong>Gemini Omni 1.2 Flash</strong>：视频生成延长至 <strong>15 秒</strong>，720p 价格下调 30% 至每秒 <strong>0.07 美元</strong>。</p>
+      <p style="margin:0 0 8px 0;font-size:14px;line-height:1.8;color:#555;">· Thinking Machines Lab 发布 <strong>Inkling 2 Small</strong>：总参数 <strong>5940 亿</strong>、每请求激活约 170 亿，模型权重计划下周开放。</p>
+      <p style="margin:0 0 8px 0;font-size:14px;line-height:1.8;color:#555;">· 美国司法部成立"超级智能特别工作组"，调查 AI 的非法使用，重点包括外国政府与犯罪组织滥用。</p>
+      <p style="margin:0;font-size:14px;line-height:1.8;color:#555;">· 谷歌宣布投资 <strong>170 亿美元</strong>在怀俄明州建数据中心，部分电力来自规划中的 <strong>702 兆瓦</strong>燃料电池项目。</p>
+    </section>
+  </section>
+
+  <!-- 结尾 -->
+  <section style="background:#1a0b2e;padding:22px 20px;text-align:center;">
+    <p style="margin:0 0 8px 0;font-size:14px;font-weight:700;color:#ffffff;">💡 一句话总结</p>
+    <p style="margin:0 0 14px 0;font-size:14px;line-height:1.9;color:#b9a3d6;">
+      开源模型在拼"花小钱办大事"，评估机构在量"AI 造 AI 有多快"。<br/>效率越高，越要看清许可条款与证据成色。
+    </p>
+    <p style="margin:0;font-size:12px;line-height:1.8;color:#7a6396;">本文为公开资讯整理，仅供参考。</p>
+  </section>
+
+</section>
+
+</body>
+</html>
