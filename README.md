@@ -3,6 +3,7 @@
 微信公众号每日热点图文的 HTML 存档。
 
 ## 文章列表
+- 2026-11-08 [OpenAI 再融资 110 亿美元估值 1.25 万亿美元；60 万块英伟达 H200 滞留香港仓库](./articles/2026-11-08-OpenAI 再融资 110 亿美元估值 1.25 万亿美元；60 万块英伟达 H200 滞留香港仓库.html)
 - 2026-11-07 [百度开源 ERNIE 5.5 Flash Base；METR：Anthropic 研发加速 1.9 倍](./articles/2026-11-07-百度开源 ERNIE 5.5 Flash Base；METR：Anthropic 研发加速 1.9 倍.html)
 - 2026-11-06 [腾讯混元 Hy4 发布；OpenAI 智能体挖出 Linux 内核 948 个提权漏洞](./articles/2026-11-06-腾讯混元 Hy4 发布；OpenAI 智能体挖出 Linux 内核 948 个提权漏洞.html)
 - 2026-11-05 [AMD三季度营收133.8亿美元；Canva重组波及1271人](./articles/2026-11-05-AMD三季度营收133.8亿美元；Canva重组波及1271人.html)
@@ -48,6 +49,7 @@
 - 2026-10-03 [Anthropic冲刺2万亿美元IPO；OpenAI遭加州传唤](./articles/2026-10-03-Anthropic冲刺2万亿美元IPO；OpenAI遭加州传唤.html)
 
 ## 打包下载
+- 2026-11-08 [文章+配图压缩包](./packages/2026-11-08-OpenAI 再融资 110 亿美元估值 1.25 万亿美元；60 万块英伟达 H200 滞留香港仓库.zip)
 - 2026-11-07 [文章+配图压缩包](./packages/2026-11-07-百度开源 ERNIE 5.5 Flash Base；METR：Anthropic 研发加速 1.9 倍.zip)
 - 2026-11-06 [文章+配图压缩包](./packages/2026-11-06-腾讯混元 Hy4 发布；OpenAI 智能体挖出 Linux 内核 948 个提权漏洞.zip)
 - 2026-11-05 [文章+配图压缩包](./packages/2026-11-05-AMD三季度营收133.8亿美元；Canva重组波及1271人.zip)
