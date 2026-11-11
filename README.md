@@ -3,6 +3,7 @@
 微信公众号每日热点图文的 HTML 存档。
 
 ## 文章列表
+- 2026-11-12 [Anthropic IPO 定价 70–78 美元；谷歌 Gemini 4 Carbon 全面开放](./articles/2026-11-12-Anthropic IPO 定价 70–78 美元；谷歌 Gemini 4 Carbon 全面开放.html)
 - 2026-11-11 [Claude Fable 5.2 发布降价两成；英伟达 GR00T 2 让机器人看人学艺](./articles/2026-11-11-Claude Fable 5.2 发布降价两成；英伟达 GR00T 2 让机器人看人学艺.html)
 - 2026-11-10 [Anthropic 34 亿美元自建发电厂；英伟达董事会调查黄仁勋](./articles/2026-11-10-Anthropic 34 亿美元自建发电厂；英伟达董事会调查黄仁勋.html)
 - 2026-11-09 [Anthropic IPO 估值遭压价；DeepMind AI 攻破 1024 位 RSA](./articles/2026-11-09-Anthropic IPO 估值遭压价；DeepMind AI 攻破 1024 位 RSA.html)
@@ -52,6 +53,7 @@
 - 2026-10-03 [Anthropic冲刺2万亿美元IPO；OpenAI遭加州传唤](./articles/2026-10-03-Anthropic冲刺2万亿美元IPO；OpenAI遭加州传唤.html)
 
 ## 打包下载
+- 2026-11-12 [文章+配图压缩包](./packages/2026-11-12-Anthropic IPO 定价 70–78 美元；谷歌 Gemini 4 Carbon 全面开放.zip)
 - 2026-11-11 [文章+配图压缩包](./packages/2026-11-11-Claude Fable 5.2 发布降价两成；英伟达 GR00T 2 让机器人看人学艺.zip)
 - 2026-11-10 [文章+配图压缩包](./packages/2026-11-10-Anthropic 34 亿美元自建发电厂；英伟达董事会调查黄仁勋.zip)
 - 2026-11-09 [文章+配图压缩包](./packages/2026-11-09-Anthropic IPO 估值遭压价；DeepMind AI 攻破 1024 位 RSA.zip)
