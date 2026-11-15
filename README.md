@@ -3,6 +3,7 @@
 微信公众号每日热点图文的 HTML 存档。
 
 ## 文章列表
+- 2026-11-16 [Gemini 4 Carbon 登顶数学基准；特斯拉 Cybercab 开卖：车价 3 万美元，月费 299 美元](./articles/2026-11-16-Gemini 4 Carbon 登顶数学基准；特斯拉 Cybercab 开卖：车价 3 万美元，月费 299 美元.html)
 - 2026-11-15 [OpenAI推出ChatGPT Wallet；微软全球宕机24小时](./articles/2026-11-15-OpenAI推出ChatGPT Wallet；微软全球宕机24小时.html)
 - 2026-11-14 [黄仁勋辞任英伟达CEO；SpaceX 拟投740亿美元建AI超算园区](./articles/2026-11-14-黄仁勋辞任英伟达CEO；SpaceX 拟投740亿美元建AI超算园区.html)
 - 2026-11-13 [Anthropic IPO 认购超额数倍；DeepMind 基因模型精确到单个细胞](./articles/2026-11-13-Anthropic IPO 认购超额数倍；DeepMind 基因模型精确到单个细胞.html)
@@ -56,6 +57,7 @@
 - 2026-10-03 [Anthropic冲刺2万亿美元IPO；OpenAI遭加州传唤](./articles/2026-10-03-Anthropic冲刺2万亿美元IPO；OpenAI遭加州传唤.html)
 
 ## 打包下载
+- 2026-11-16 [文章+配图压缩包](./packages/2026-11-16-Gemini 4 Carbon 登顶数学基准；特斯拉 Cybercab 开卖：车价 3 万美元，月费 299 美元.zip)
 - 2026-11-15 [文章+配图压缩包](./packages/2026-11-15-OpenAI推出ChatGPT Wallet；微软全球宕机24小时.zip)
 - 2026-11-14 [文章+配图压缩包](./packages/2026-11-14-黄仁勋辞任英伟达CEO；SpaceX 拟投740亿美元建AI超算园区.zip)
 - 2026-11-13 [文章+配图压缩包](./packages/2026-11-13-Anthropic IPO 认购超额数倍；DeepMind 基因模型精确到单个细胞.zip)
