@@ -3,6 +3,7 @@
 微信公众号每日热点图文的 HTML 存档。
 
 ## 文章列表
+- 2026-11-21 [Anthropic 上市首日涨 17% 创史上最大 IPO；谷歌 Willow 量子实验登上《科学》](./articles/2026-11-21-Anthropic 上市首日涨 17% 创史上最大 IPO；谷歌 Willow 量子实验登上《科学》.html)
 - 2026-11-20 [Anthropic 83 美元定价首日大涨 34%；谷歌发布 Gemini 4 Neon](./articles/2026-11-20-Anthropic 83 美元定价首日大涨 34%；谷歌发布 Gemini 4 Neon.html)
 - 2026-11-19 [OpenAI 发布 GPT-6.2：旗舰降价两成；英伟达单季营收 1158 亿美元](./articles/2026-11-19-OpenAI 发布 GPT-6.2：旗舰降价两成；英伟达单季营收 1158 亿美元.html)
 - 2026-11-18 [加州正式起诉 OpenAI；美国堵上 AI 芯片远程租用漏洞](./articles/2026-11-18-加州正式起诉 OpenAI；美国堵上 AI 芯片远程租用漏洞.html)
@@ -61,6 +62,7 @@
 - 2026-10-03 [Anthropic冲刺2万亿美元IPO；OpenAI遭加州传唤](./articles/2026-10-03-Anthropic冲刺2万亿美元IPO；OpenAI遭加州传唤.html)
 
 ## 打包下载
+- 2026-11-21 [文章+配图压缩包](./packages/2026-11-21-Anthropic 上市首日涨 17% 创史上最大 IPO；谷歌 Willow 量子实验登上《科学》.zip)
 - 2026-11-20 [文章+配图压缩包](./packages/2026-11-20-Anthropic 83 美元定价首日大涨 34%；谷歌发布 Gemini 4 Neon.zip)
 - 2026-11-19 [文章+配图压缩包](./packages/2026-11-19-OpenAI 发布 GPT-6.2：旗舰降价两成；英伟达单季营收 1158 亿美元.zip)
 - 2026-11-18 [文章+配图压缩包](./packages/2026-11-18-加州正式起诉 OpenAI；美国堵上 AI 芯片远程租用漏洞.zip)
