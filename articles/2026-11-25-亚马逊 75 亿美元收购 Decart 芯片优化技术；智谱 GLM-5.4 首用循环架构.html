@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>亚马逊 75 亿美元收购 Decart 芯片优化技术；智谱 GLM-5.4 首用循环架构</title>
+</head>
+<body>
+<section style="max-width:100%;margin:0 auto;padding:0;font-family:-apple-system,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#333;background:#ffffff;">
+
+  <!-- 顶部横幅 -->
+  <section style="background:linear-gradient(135deg,#0b2e1a 0%,#1d6b3c 60%,#0b2e1a 100%);padding:36px 24px;text-align:center;">
+    <p style="margin:0 0 10px 0;font-size:13px;letter-spacing:6px;color:#a9e6c3;">AI 前沿速览</p>
+    <p style="margin:0;font-size:22px;font-weight:700;color:#ffffff;line-height:1.5;">亚马逊 75 亿美元收购 Decart 芯片优化技术；智谱 GLM-5.4 首用循环架构</p>
+    <p style="margin:12px 0 0 0;font-size:13px;color:#b9d6c3;">2026 年 11 月 24 日</p>
+  </section>
+
+  <!-- 导语 -->
+  <section style="padding:22px 20px 6px 20px;">
+    <p style="margin:0;font-size:15px;line-height:1.9;color:#555;">
+      11 月 24 日的 AI 圈，<strong style="color:#1a1a1a;">一笔 75 亿美元的收购直指英伟达的护城河</strong>：亚马逊拿下 Decart 的芯片优化技术，要让自家 Trainium 芯片跑得更快；同一天，<strong style="color:#1a1a1a;">智谱发布 GLM-5.4，用「循环」代替「堆参数」</strong>，750B 参数叫板 2–3T 级模型。下面拆开讲透。
+    </p>
+  </section>
+
+  <!-- 分隔线 -->
+  <section style="padding:14px 20px 0 20px;">
+    <p style="margin:0;border-top:1px solid #eee;"></p>
+  </section>
+
+  <!-- 热点一 -->
+  <section style="padding:20px;">
+    <p style="margin:0 0 6px 0;">
+      <span style="display:inline-block;background:#1d6b3c;color:#ffffff;font-size:13px;font-weight:700;padding:3px 12px;border-radius:20px;">大事件 01</span>
+    </p>
+    <p style="margin:8px 0 14px 0;font-size:20px;font-weight:700;line-height:1.5;color:#111;">
+      亚马逊约 75 亿美元收购 Decart 芯片优化技术，矛头直指英伟达
+    </p>
+    <p style="margin:0 0 16px 0;text-align:center;">
+      <img src="IMG_DECART" style="width:100%;border-radius:8px;" alt="AI 芯片" />
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      11 月 24 日周一，亚马逊宣布已签署协议，收购以色列 AI 初创公司 Decart 的 <strong>Decart Optimization Stack（DOS）</strong> 技术，三位联合创始人 Dean Leitersdorf、Orian Leitersdorf、Moshe Shalev 及研究工程团队将一并加入亚马逊。亚马逊未披露交易价格，<strong>彭博社援引知情人士称约为 75 亿美元</strong>（约合 1.2 万亿日元），接近 Decart 今年 5 月估值的两倍。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      这笔钱买的是「软件层」，不是模型。DOS 的作用是让 AI 模型在不同芯片上跑得更快、更省：它处在模型与芯片之间，按芯片特性优化程序转换与执行方式。据报道，Decart 的技术实测在 Trainium3 上实时视频生成的帧吞吐量达到 GPU 方案的 <strong>4 倍</strong>。亚马逊将通过自家芯片部门 Annapurna Labs，用它强化 Trainium 与 Inferentia 芯片，目标是把 AWS 做成万亿美元营收的业务。亚马逊自 2025 年起就与 Decart 合作优化 Trainium。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      有意思的是交易的「不包括」清单：Decart 的 Lucy 实时视频编辑模型、Oasis 互动虚拟世界模型（最新为 Oasis 3）<strong>都不在收购范围内</strong>，亚马逊买的也不是 Decart 这家公司本身，而是技术与团队。现有客户（如 eBay，同样也是 Decart 的投资方）的后续安排尚未公布，DOS 是否继续支持英伟达与谷歌的硬件，亚马逊也未表态。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      交易结构同样不寻常：据 Calcalist 报道，对价为现金加股票组合，三位创始人须<strong>留任 5 年</strong>才能拿满报酬，相当一部分创始人报酬要递延到留任期结束；交易细节预计一个多月后才完整披露，成交仍需监管批准。时机也耐人寻味——Haaretz 指出，亚马逊宣布收购只比英伟达宣布黄仁勋复职<strong>早了 10 分钟</strong>。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      背景是，Anthropic 今年 9 月曾在尽调后放弃了约 60 亿美元收购 Decart 的方案。亚马逊此番接手，被 TechCrunch 解读为「用软件缩小与英伟达的芯片差距」：打不赢 CUDA 生态，就先让模型在自家芯片上跑得足够快。真正的考验还在后头——亚马逊已表示 Trainium 计划从 2027 年底起对外销售，能不能卖得动，才是这笔收购值不值的终极检验。
+    </p>
+    <!-- 数据速览 -->
+    <section style="background:#eaf5ee;border:1px solid #a9d6b8;border-radius:10px;padding:16px 18px;margin:16px 0;">
+      <p style="margin:0 0 10px 0;font-size:14px;font-weight:700;color:#1d6b3c;">📊 要点速览</p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 亚马逊收购 Decart 的 <strong>DOS 芯片优化技术</strong>及三位创始人与团队，<strong>不含 Lucy、Oasis 模型</strong></p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 据彭博社报道交易价<strong>约 75 亿美元</strong>，亚马逊官方未披露；创始人须留任 5 年</p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· DOS 实测在 Trainium3 上实时视频生成帧吞吐量为 GPU 方案的 <strong>4 倍</strong></p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 成交仍需<strong>监管批准</strong>；9 月 Anthropic 曾放弃约 60 亿美元收购方案</p>
+      <p style="margin:0;font-size:14px;line-height:1.8;color:#555;">· 亚马逊计划 <strong>2027 年底起</strong>对外销售 Trainium 芯片</p>
+    </section>
+    <p style="margin:0;font-size:12px;color:#999;line-height:1.8;">消息来源：TechCrunch、Haaretz、彭博社（经多家转引）、Calcalist、《经济时报》（2026-11-24）</p>
+  </section>
+
+  <!-- 分隔线 -->
+  <section style="padding:0 20px;">
+    <p style="margin:0;border-top:1px dashed #ddd;"></p>
+  </section>
+
+  <!-- 热点二 -->
+  <section style="padding:20px;">
+    <p style="margin:0 0 6px 0;">
+      <span style="display:inline-block;background:#c0392b;color:#ffffff;font-size:13px;font-weight:700;padding:3px 12px;border-radius:20px;">大事件 02</span>
+    </p>
+    <p style="margin:8px 0 14px 0;font-size:20px;font-weight:700;line-height:1.5;color:#111;">
+      智谱发布 GLM-5.4：不堆参数，28 层循环两遍叫板 2–3T 级模型
+    </p>
+    <p style="margin:0 0 16px 0;text-align:center;">
+      <img src="IMG_GLM" style="width:100%;border-radius:8px;" alt="智谱 GLM" />
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      11 月 23 日晚，智谱（Z.ai）发布新一代旗舰模型 <strong>GLM-5.4</strong>，这是其首个采用 <strong>Loop Transformer（循环架构）</strong> 的旗舰模型，也是走向「泛 Coding」范式的开端。模型总参数 750B，核心创新是把 GLM-5 基座中的 <strong>28 层共享权重、每轮推理跑两遍</strong>，用更深的计算换取智能上限，而不是把模型做得更大。智谱官方称，其智能水平可对标 2T–3T 参数级模型。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      「循环」的代价被三项设计压得很低：<strong>门控渐进更新</strong>，每轮只按比例把改动融合进残差流；<strong>KV Cache 远处全局共享、近处滑窗独立</strong>，多跑一轮只多一个滑窗大小的 KV；<strong>复用稀疏注意力索引</strong>，第二轮直接拿第一轮算好的索引，几乎不增加计算开销。智谱在与 750B 基座架构相同的 30B 模型上做同参数量对照：训练计算量仅多约 10%，AIME25 由 19.17 升至 30.42，GPQA-Diamond 由 47.58 升至 56.26，平均输出长度反降 10%–14%。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      速度同样亮眼：官方称非高峰时段最高 <strong>200 tokens/s</strong>，高峰时段 70–80 tokens/s。GLM-5.4 新增视觉能力，主打「泛 Coding」——代码不只写软件，还能生成视频、游戏、CAD 设计与交互 3D 场景。发布当晚起，模型已向 GLM Coding Plan 全量用户开放，同步上线 ZCode、Trae、WorkBuddy、Qoder、CatPaw、OpenCode 等编码平台，V2/V3 及团队版用户额度提升至 1.5 倍；API 与开源权重将在安全评估后放出。
+    </p>
+    <p style="margin:0 0 12px 0;font-size:15px;line-height:1.9;color:#444;">
+      不过要泼一点冷水：上述成绩与「对标 2–3T」的说法<strong>均为官方自报</strong>，旗舰模型本身的基准成绩尚未公布，30B 对照实验也不能直接等同于 750B 旗舰的表现。智谱自己也把 GLM-5.4 定位为「收官之作」——下一代 GLM-5.5 规模将显著更大，并承接这套循环配方。循环这条路能不能撑起更大的模型，答案在下一代。
+    </p>
+    <!-- 数据速览 -->
+    <section style="background:#fdeeee;border:1px solid #f3b8b8;border-radius:10px;padding:16px 18px;margin:16px 0;">
+      <p style="margin:0 0 10px 0;font-size:14px;font-weight:700;color:#a02020;">🚨 要点速览</p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· GLM-5.4 总参数 <strong>750B</strong>，GLM-5 基座 <strong>28 层循环两遍</strong>，官方称对标 2T–3T 级模型</p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 30B 对照：训练算力仅多约 10%，AIME25 由 19.17 升至 <strong>30.42</strong>，GPQA-Diamond 由 47.58 升至 <strong>56.26</strong></p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 速度非高峰最高 <strong>200 tokens/s</strong>，高峰 70–80 tokens/s</p>
+      <p style="margin:0 0 6px 0;font-size:14px;line-height:1.8;color:#555;">· 已向 GLM Coding Plan 全量用户开放，V2/V3 及团队版额度提升 <strong>1.5 倍</strong></p>
+      <p style="margin:0;font-size:14px;line-height:1.8;color:#555;">· 旗舰基准成绩<strong>尚未公布</strong>，均为官方自报，尚无独立验证</p>
+    </section>
+    <p style="margin:0;font-size:12px;color:#999;line-height:1.8;">消息来源：智东西、Dealroom、The Decoder（经转引）（2026-11-23/24）</p>
+  </section>
+
+  <!-- 一句话快讯 -->
+  <section style="padding:0 20px 20px 20px;">
+    <section style="background:#f6f8fb;border-radius:10px;padding:16px 18px;">
+      <p style="margin:0 0 10px 0;font-size:14px;font-weight:700;color:#333;">⚡ 一句话快讯</p>
+      <p style="margin:0 0 8px 0;font-size:14px;line-height:1.8;color:#555;">· 据报道，阿里 Qwen4-Max 总参数 2.4 万亿，同性能下推理 Token 消耗减少约 24% 和 35%，单任务平均费用降幅 58%。</p>
+      <p style="margin:0 0 8px 0;font-size:14px;line-height:1.8;color:#555;">· 据报道，Anthropic 推出 Claude Ship（beta），包含 Code Review、PR Steward 与 Claude Approvals 三个智能体，最终合并仍受 GitHub 分支保护约束。</p>
+      <p style="margin:0;font-size:14px;line-height:1.8;color:#555;">· 据报道，中国电信开源星辰 4.1，约 2850 亿参数 MoE、原生 100 万 Token 上下文，预训练在 8192 张昇腾 910C 上完成，未使用英伟达 GPU。</p>
+    </section>
+  </section>
+
+  <!-- 结尾 -->
+  <section style="background:#0b2e1a;padding:22px 20px;text-align:center;">
+    <p style="margin:0 0 8px 0;font-size:14px;font-weight:700;color:#ffffff;">💡 一句话总结</p>
+    <p style="margin:0 0 14px 0;font-size:14px;line-height:1.9;color:#a9e6c3;">
+      亚马逊花 75 亿美元买「软件层」，赌的是芯片竞争的下一回合不在硬件本身。<br/>智谱用循环代替堆参数，赌的是智能的下一级台阶不在规模本身。
+    </p>
+    <p style="margin:0;font-size:12px;line-height:1.8;color:#7a9a86;">本文为公开资讯整理，仅供参考。</p>
+  </section>
+
+</section>
+
+</body>
+</html>
